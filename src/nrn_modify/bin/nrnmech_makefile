@@ -1,0 +1,94 @@
+#
+# This makefile has the rules necessary for making a nrnmech library that
+# can be dlopen'd from nrniv.
+# The variable "MODOBJFILES" should
+# be set on the command line to list the .o files that are needed.
+
+includedir = $(prefix)/include
+datadir = $(prefix)/share
+pkgdatadir = $(datadir)/nrn
+pkglibdir = $(libdir)/nrn
+pkgincludedir = $(includedir)/nrn
+libobjdir = $(libdir)
+
+DEFS = -DHAVE_CONFIG_H
+LDFLAGS = $(UserLDFLAGS) 
+LIBS =  -lm -ldl
+X_CFLAGS = 
+X_LIBS = 
+X_EXTRA_LIBS = 
+X_PRE_LIBS = 
+#IV_LIBS =  $(X_PRE_LIBS) $(X_LIBS) $(X_EXTRA_LIBS)
+IV_LIBS =
+IVOS_LIB = -livos
+PVM_LIBS =  
+NJ_LIBS = 
+#PY_LIBS = -lnrnpython -L/usr/lib -lpython3.6m -lpthread -ldl  -lutil -lexpat                     -L/usr/lib -lz  -lexpat -R/usr/lib
+PY_LIBS =
+NRNNI_LIBS = 
+
+INCLUDES = -I. -I.. -I"$(pkgincludedir)" -I"$(libdir)" $(UserINCFLAGS) 
+
+LIBTOOL = "$(pkgdatadir)/libtool" --tag=CC
+CC = mpicc
+CFLAGS = -g -O2
+
+COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \
+        $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
+LTCOMPILE = $(LIBTOOL) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) \
+        $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
+CCLD = $(CC)
+LINK = $(LIBTOOL) --mode=link $(CCLD) -module $(AM_CFLAGS) $(CFLAGS) \
+        $(AM_LDFLAGS) $(LDFLAGS) -o $@
+
+#lnrnmpi =
+lnrnmpi = -lnrnmpi
+
+NRNOCLIBS = -L"$(libdir)" -lnrnoc -loc -lmemacs \
+	$(lnrnmpi) -lscopmath -lsparse13 -lreadline -lncurses -ltinfo
+NRNIVLIBS = -L"$(libdir)" -lnrniv -livoc \
+	-lneuron_gnu -lmeschach -lsundials \
+	$(IVOS_LIB) $(IV_LIBS) $(NJ_LIBS) $(PY_LIBS) $(NRNNI_LIBS) $(PVM_LIBS)
+
+NRNOCOBJS = "$(libobjdir)/ocmain.o" "$(libobjdir)/nrnnoiv.o" "$(libobjdir)/ocnoiv.o"
+NRNIVOBJS = "$(libobjdir)/nrnmain.o" "$(libobjdir)/ivocmain.o" "$(libobjdir)/nvkludge.o"
+
+.SUFFIXES:
+
+.SUFFIXES: .c .mod .lo
+#
+# How to make a .o file from a .mod file.  Note that we have to delete the
+# .c file, or else make will get confused.  We have to go directly from
+# a .mod to a .o file because otherwise GNU make will try to use a rule
+# involving m2c.  Argh!!  Why did they have to build in so many implicit
+# rules?
+# 
+#.mod.o:
+#	$(bindir)/nocmodl $* || (rm -f $*.c; exit 1)
+#	$(COMPILE) -c $*.c
+#	rm -f $*.c
+#
+# some experimentation gave promising results for the following.
+# it remains to be seen how portable it is. It seems to work
+# for gnu make and the /usr/ccs/bin/make distributed with solaris.
+
+#%.o : %.mod
+
+.mod.c:
+	"$(bindir)/nocmodl" $*
+	
+.c.lo:
+	$(LTCOMPILE) -c -o $@ `test -f '$<' || echo '$(srcdir)/'`$<
+
+.mod.lo:
+	"$(bindir)/nocmodl" $*
+	$(LTCOMPILE) -c -o $@ $*.c
+
+mod_func.lo: mod_func.c
+	$(LTCOMPILE) -c -o $@ $*.c
+
+libnrnmech_la_OBJECTS = $(MODOBJFILES) mod_func.lo $(COBJFILES)
+libnrnmech_la_LIBADD = $(NRNOCLIBS) $(NRNIVLIBS)
+
+libnrnmech.la: $(libnrnmech_la_OBJECTS) $(libnrnmech_la_DEPENDENCIES)
+	$(LINK) -rpath "$(libdir)" $(libnrnmech_la_LDFLAGS) $(libnrnmech_la_OBJECTS) $(libnrnmech_la_LIBADD) $(LIBS)

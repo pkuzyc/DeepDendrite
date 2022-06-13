@@ -1,0 +1,145 @@
+// check units on selected .mod files
+
+// bug on some machines requires that a window exists before a dialog
+xpanel("")
+xbutton("nothing", "print 1")
+xpanel(5000, 5000)
+
+show_winio(0)
+
+{load_file("stdlib.hoc", "String")}
+
+objref rwl_, rwf_, sf_, tobj, box
+objref ldfile
+strdef tstr, rwdname, path, fname
+
+sprint(path, "%s", getcwd())
+ldfile = new File()
+
+sf_ = new StringFunctions()
+if (unix_mac_pc() == 1) {
+	rwdname = "$(HOME)/.NRNWorkingDirs"
+}else{
+	rwdname = "$(NEURONHOME)/RecentWorkingDirs"
+}
+
+proc filemenu() {localobj s
+	box = new VBox()
+	box.intercept(1)
+	xpanel("")
+	xmenu("Recent directories", "recent_working_dirs()")
+	xmenu()
+	xlabel("An alternative to this selection tool is to")
+	xlabel("start a shell or dos box, move to a directory")
+	xlabel("containing .mod files, and execute")
+	s = new String("bin")
+    if (sf_.substr(nrnversion(6), "host=x86_64-w64-mingw32") > 0) {
+	s.s = "bin64"
+    }
+	sprint(tstr, "     %s/%s/modlunit   file.mod", neuronhome(), s.s)
+	xlabel(tstr)
+	xpanel()
+	box.intercept(0)
+}
+
+proc doit() {local b
+	filemenu()
+	while (1) {
+		index = -1
+		b = box.dialog("Choose directory for checking mod files", "Choose directory", "Quit")
+		if (b == 0) { break }
+		if (index != -1) {
+			chdir(rwl_.object(index).s)
+		}
+		change_working_dir()
+	}
+	quit()
+}
+
+proc change_working_dir() {
+	ldfile.chooser("d", "Directory", "", "Selected Directory", "Cancel", getcwd())
+	if (ldfile.chooser()) {
+		read_recent_working_dirs()
+		if (change_working_dir1(ldfile.dir)) {
+			checker()
+		}
+	}
+}
+
+func change_working_dir1() {
+	if(chdir($s1) != 0) {
+		sprint(tstr, "No such directory: %s", $s1)
+		continue_dialog(tstr)
+		return 0
+	}
+	sprint(path, "%s", getcwd())
+	write_recent_working_dirs()
+	return 1
+}
+
+proc read_recent_working_dirs() {local i
+	rwf_ = new File()
+	rwl_ = new List()
+	if (rwf_.ropen(rwdname)) {
+		while (!rwf_.eof()) {
+			rwf_.gets(tstr)
+			sf_.left(tstr, sf_.len(tstr) - 1)
+			tobj = new String(tstr)
+			rwl_.append(tobj)
+		}
+		rwf_.close()
+	}
+}
+
+proc write_recent_working_dirs() {local i
+	rwf_ = new File()
+	if (rwf_.wopen(rwdname)) {
+		rwf_.printf("%s\n", path)
+		for i=0, rwl_.count-1 {
+			if (strcmp(path, rwl_.object(i).s) != 0) {
+				rwf_.printf("%s\n", rwl_.object(i).s)
+				if (i > 10) break
+			}
+		}
+		rwf_.close()
+	}
+}
+
+proc recent_working_dirs() {local i
+	read_recent_working_dirs()
+	for i=0, rwl_.count-1 {
+		//sprint(tstr, "change_working_dir2(%d)", i)
+		sprint(tstr, "index=%d box.unmap(1)", i)
+		xbutton(rwl_.object(i).s, tstr)
+	}
+}
+
+proc exec() {localobj s1, s2
+    if (sf_.substr(nrnversion(8), "mingw") > 0) {
+	s1 = new String()
+	s2 = new String()
+	sscanf(neuronhome(), "%[^:]:%s", s1.s, s2.s)
+	sprint(s1.s, "/cygdrive/%s%s", s1.s, s2.s)
+	sprint(tstr, "%s/mingw/usr/bin/sh %s/lib/modlunit.sh %s %s", neuronhome(), neuronhome(), s1.s, $s1)
+//	print tstr
+	system(tstr)
+    }else{
+	sprint(tstr, "%s\\bin\\mintty -c %s/lib/minttyrc %s/bin/bash --rcfile %s/lib/nrnstart.bsh %s/lib/modlunit.sh %s %s", neuronhome(1), neuronhome(), neuronhome(), neuronhome(), neuronhome(), neuronhome(), $s1)
+	print tstr
+
+	WinExec(tstr)
+    }
+}
+
+proc checker() {
+	chdir(path)
+	ldfile.chooser("", "Check Units for:", "*.mod", "Check Units", "Quit", getcwd())
+	while (ldfile.chooser()) {
+		ldfile.getname(fname)
+		exec(fname)
+	}
+	quit()
+}
+
+doit()
+

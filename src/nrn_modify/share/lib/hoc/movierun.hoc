@@ -1,0 +1,45 @@
+movie_frame_dur_ = .01
+{variable_domain(&movie_frame_dur_, .001, 1e9) units(&movie_frame_dur_, "s")}
+objref movie_timer, movierunbox
+movie_timer = new Timer("moviestep()")
+proc moviestep() {
+	steprun()
+	realtime = startsw() - rtstart
+	if (t >= tstop || stoprun) {
+		movie_timer.end()
+		running_ = 0
+	}
+}
+proc movierun() {
+	if (object_id(movie_timer) == 0) { movie_timer = new Timer("moviestep()")}
+	realtime = 0  rtstart = startsw()
+	running_ = 1 // run button checkbox
+	stoprun = 0
+	stdinit()
+	movie_timer.seconds(movie_frame_dur_)
+	movie_timer.start()
+}
+
+proc movierunpanel() {localobj b
+	b = new VBox(3)
+	movierunbox = b
+	b.save("movierunsave()")
+	b.intercept(1)
+	xpanel("Movie Run")
+	xbutton("Init & Run", "movierun()")
+	xpvalue("Seconds per step", &movie_frame_dur_, 1)
+	xpanel()
+	b.intercept(0)
+	if (numarg() == 0) {
+		b.map("Movie Run", 400, 300, 280, 85)
+	}
+}
+
+proc movierunsave() {localobj b, s
+	b = movierunbox
+	s = new String()
+	sprint(s.s, "movie_frame_dur_ = %g\n", movie_frame_dur_)
+	b.save(s.s)
+	b.save("movierunpanel(0)")
+	b.save("ocbox_ = movierunbox")	
+}

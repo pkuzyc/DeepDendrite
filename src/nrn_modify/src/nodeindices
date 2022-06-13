@@ -1,0 +1,1392 @@
+./ni_pci_6229/Makefile:725:html: html-am
+./ni_pci_6229/Makefile:727:html-am:
+./ni_pci_6229/Makefile:741:install-html: install-html-am
+./ni_pci_6229/Makefile:743:install-html-am:
+./ni_pci_6229/Makefile:787:	html-am info info-am install install-am install-data \
+./ni_pci_6229/Makefile:789:	install-exec-am install-html install-html-am install-info \
+./ni_pci_6229/Makefile.in:725:html: html-am
+./ni_pci_6229/Makefile.in:727:html-am:
+./ni_pci_6229/Makefile.in:741:install-html: install-html-am
+./ni_pci_6229/Makefile.in:743:install-html-am:
+./ni_pci_6229/Makefile.in:787:	html-am info info-am install install-am install-data \
+./ni_pci_6229/Makefile.in:789:	install-exec-am install-html install-html-am install-info \
+./uxnrnbbs/Makefile:693:html: html-am
+./uxnrnbbs/Makefile:695:html-am:
+./uxnrnbbs/Makefile:709:install-html: install-html-am
+./uxnrnbbs/Makefile:711:install-html-am:
+./uxnrnbbs/Makefile:755:	html-am info info-am install install-am install-binPROGRAMS \
+./uxnrnbbs/Makefile:757:	install-exec install-exec-am install-html install-html-am \
+./uxnrnbbs/Makefile.in:693:html: html-am
+./uxnrnbbs/Makefile.in:695:html-am:
+./uxnrnbbs/Makefile.in:709:install-html: install-html-am
+./uxnrnbbs/Makefile.in:711:install-html-am:
+./uxnrnbbs/Makefile.in:755:	html-am info info-am install install-am install-binPROGRAMS \
+./uxnrnbbs/Makefile.in:757:	install-exec install-exec-am install-html install-html-am \
+./Random123/Makefile:505:html: html-am
+./Random123/Makefile:507:html-am:
+./Random123/Makefile:521:install-html: install-html-am
+./Random123/Makefile:523:install-html-am:
+./Random123/Makefile:563:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./Random123/Makefile:566:	install-html-am install-info install-info-am install-man \
+./Random123/Makefile.in:505:html: html-am
+./Random123/Makefile.in:507:html-am:
+./Random123/Makefile.in:521:install-html: install-html-am
+./Random123/Makefile.in:523:install-html-am:
+./Random123/Makefile.in:563:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./Random123/Makefile.in:566:	install-html-am install-info install-info-am install-man \
+./ivos/OS/Makefile:514:html: html-am
+./ivos/OS/Makefile:516:html-am:
+./ivos/OS/Makefile:530:install-html: install-html-am
+./ivos/OS/Makefile:532:install-html-am:
+./ivos/OS/Makefile:572:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./ivos/OS/Makefile:575:	install-html-am install-info install-info-am install-man \
+./ivos/OS/Makefile.in:514:html: html-am
+./ivos/OS/Makefile.in:516:html-am:
+./ivos/OS/Makefile.in:530:install-html: install-html-am
+./ivos/OS/Makefile.in:532:install-html-am:
+./ivos/OS/Makefile.in:572:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./ivos/OS/Makefile.in:575:	install-html-am install-info install-info-am install-man \
+./ivos/Makefile:195:	ctags-recursive dvi-recursive html-recursive info-recursive \
+./ivos/Makefile:197:	install-exec-recursive install-html-recursive \
+./ivos/Makefile:836:html: html-recursive
+./ivos/Makefile:838:html-am:
+./ivos/Makefile:852:install-html: install-html-recursive
+./ivos/Makefile:854:install-html-am:
+./ivos/Makefile:899:	html-am info info-am install install-am install-data \
+./ivos/Makefile:901:	install-exec-am install-html install-html-am install-info \
+./ivos/InterViews/Makefile:510:html: html-am
+./ivos/InterViews/Makefile:512:html-am:
+./ivos/InterViews/Makefile:526:install-html: install-html-am
+./ivos/InterViews/Makefile:528:install-html-am:
+./ivos/InterViews/Makefile:568:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./ivos/InterViews/Makefile:571:	install-html-am install-info install-info-am install-man \
+./ivos/InterViews/Makefile.in:510:html: html-am
+./ivos/InterViews/Makefile.in:512:html-am:
+./ivos/InterViews/Makefile.in:526:install-html: install-html-am
+./ivos/InterViews/Makefile.in:528:install-html-am:
+./ivos/InterViews/Makefile.in:568:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./ivos/InterViews/Makefile.in:571:	install-html-am install-info install-info-am install-man \
+./ivos/Makefile.in:195:	ctags-recursive dvi-recursive html-recursive info-recursive \
+./ivos/Makefile.in:197:	install-exec-recursive install-html-recursive \
+./ivos/Makefile.in:836:html: html-recursive
+./ivos/Makefile.in:838:html-am:
+./ivos/Makefile.in:852:install-html: install-html-recursive
+./ivos/Makefile.in:854:install-html-am:
+./ivos/Makefile.in:899:	html-am info info-am install install-am install-data \
+./ivos/Makefile.in:901:	install-exec-am install-html install-html-am install-info \
+./nrnjava/nrnccmb/Makefile:507:html: html-am
+./nrnjava/nrnccmb/Makefile:509:html-am:
+./nrnjava/nrnccmb/Makefile:523:install-html: install-html-am
+./nrnjava/nrnccmb/Makefile:525:install-html-am:
+./nrnjava/nrnccmb/Makefile:565:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./nrnjava/nrnccmb/Makefile:568:	install-html-am install-info install-info-am install-man \
+./nrnjava/nrnccmb/Makefile.in:507:html: html-am
+./nrnjava/nrnccmb/Makefile.in:509:html-am:
+./nrnjava/nrnccmb/Makefile.in:523:install-html: install-html-am
+./nrnjava/nrnccmb/Makefile.in:525:install-html-am:
+./nrnjava/nrnccmb/Makefile.in:565:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./nrnjava/nrnccmb/Makefile.in:568:	install-html-am install-info install-info-am install-man \
+./nrnjava/Makefile:198:	ctags-recursive dvi-recursive html-recursive info-recursive \
+./nrnjava/Makefile:200:	install-exec-recursive install-html-recursive \
+./nrnjava/Makefile:893:html: html-recursive
+./nrnjava/Makefile:895:html-am:
+./nrnjava/Makefile:909:install-html: install-html-recursive
+./nrnjava/Makefile:911:install-html-am:
+./nrnjava/Makefile:957:	html-am info info-am install install-am install-data \
+./nrnjava/Makefile:959:	install-exec-am install-html install-html-am install-info \
+./nrnjava/neuron/Makefile:499:html: html-am
+./nrnjava/neuron/Makefile:501:html-am:
+./nrnjava/neuron/Makefile:515:install-html: install-html-am
+./nrnjava/neuron/Makefile:517:install-html-am:
+./nrnjava/neuron/Makefile:557:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./nrnjava/neuron/Makefile:560:	install-html-am install-info install-info-am install-man \
+./nrnjava/neuron/Makefile.in:499:html: html-am
+./nrnjava/neuron/Makefile.in:501:html-am:
+./nrnjava/neuron/Makefile.in:515:install-html: install-html-am
+./nrnjava/neuron/Makefile.in:517:install-html-am:
+./nrnjava/neuron/Makefile.in:557:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./nrnjava/neuron/Makefile.in:560:	install-html-am install-info install-info-am install-man \
+./nrnjava/Makefile.in:198:	ctags-recursive dvi-recursive html-recursive info-recursive \
+./nrnjava/Makefile.in:200:	install-exec-recursive install-html-recursive \
+./nrnjava/Makefile.in:893:html: html-recursive
+./nrnjava/Makefile.in:895:html-am:
+./nrnjava/Makefile.in:909:install-html: install-html-recursive
+./nrnjava/Makefile.in:911:install-html-am:
+./nrnjava/Makefile.in:957:	html-am info info-am install install-am install-data \
+./nrnjava/Makefile.in:959:	install-exec-am install-html install-html-am install-info \
+./mac/Makefile:578:html: html-am
+./mac/Makefile:580:html-am:
+./mac/Makefile:594:install-html: install-html-am
+./mac/Makefile:596:install-html-am:
+./mac/Makefile:636:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./mac/Makefile:639:	install-exec-am install-html install-html-am install-info \
+./mac/Makefile.in:578:html: html-am
+./mac/Makefile.in:580:html-am:
+./mac/Makefile.in:594:install-html: install-html-am
+./mac/Makefile.in:596:install-html-am:
+./mac/Makefile.in:636:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./mac/Makefile.in:639:	install-exec-am install-html install-html-am install-info \
+./nmodl/nocpout.c:2369:  _cntml = _ml->_nodecount;\n\
+./nmodl/nocpout.c:2370:  _thread = _ml->_thread;\n\
+./nmodl/nocpout.c:2372:    _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];\n\
+./nmodl/nocpout.c:2373:    _nd = _ml->_nodelist[_iml];\n\
+Binary file ./nmodl/nocmodl matches
+Binary file ./nmodl/noccout.o matches
+./nmodl/Makefile:759:html: html-am
+./nmodl/Makefile:761:html-am:
+./nmodl/Makefile:775:install-html: install-html-am
+./nmodl/Makefile:777:install-html-am:
+./nmodl/Makefile:821:	html-am info info-am install install-am install-binPROGRAMS \
+./nmodl/Makefile:823:	install-exec install-exec-am install-html install-html-am \
+Binary file ./nmodl/nocpout.o matches
+./nmodl/noccout.c:64:			P(" _nd = _ml->_nodelist[_iml];\n");
+./nmodl/noccout.c:79:			P("    _nd = _ml->_nodelist[_iml];\n");
+./nmodl/noccout.c:87:			P(" _nd = _ml->_nodelist[_iml];\n");
+./nmodl/noccout.c:96:			P("    _nd = _ml->_nodelist[_iml];\n");
+./nmodl/noccout.c:216:	  P("    _ni = _ml->_nodeindices;\n");
+./nmodl/noccout.c:218:	  P("_cntml = _ml->_nodecount;\n");
+./nmodl/noccout.c:220:	  P(" _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];\n");
+./nmodl/noccout.c:263:	  P("    _ni = _ml->_nodeindices;\n");
+./nmodl/noccout.c:265:	  P("_cntml = _ml->_nodecount;\n");
+./nmodl/noccout.c:267:	  P(" _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];\n");
+./nmodl/noccout.c:336:	  P("    _ni = _ml->_nodeindices;\n");
+./nmodl/noccout.c:338:	  P("_cntml = _ml->_nodecount;\n");
+./nmodl/noccout.c:340:	  P(" _p = _ml->_data[_iml];\n");
+./nmodl/noccout.c:342:		P(" _nd = _ml->_nodelist[_iml];\n");
+./nmodl/noccout.c:371:		P("     _nd = _ml->_nodelist[_iml];\n");
+./nmodl/noccout.c:394:	  P("    _ni = _ml->_nodeindices;\n");
+./nmodl/noccout.c:396:	  P("_cntml = _ml->_nodecount;\n");
+./nmodl/noccout.c:398:	  P(" _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];\n");
+./nmodl/noccout.c:399:	  P(" _nd = _ml->_nodelist[_iml];\n");
+./nmodl/noccout.c:700:	  P("    _ni = _ml->_nodeindices;\n");
+./nmodl/noccout.c:702:	  P("_cntml = _ml->_nodecount;\n");
+./nmodl/noccout.c:703:	  P("_thread = _ml->_thread;\n");
+./nmodl/noccout.c:706:	  P(" _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];\n");
+./nmodl/noccout.c:749:	  P("    _ni = _ml->_nodeindices;\n");
+./nmodl/noccout.c:751:	  P("_cntml = _ml->_nodecount;\n");
+./nmodl/noccout.c:752:	  P("_thread = _ml->_thread;\n");
+./nmodl/noccout.c:754:	  P(" _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];\n");
+./nmodl/noccout.c:831:	  P("    _ni = _ml->_nodeindices;\n");
+./nmodl/noccout.c:833:	  P("_cntml = _ml->_nodecount;\n");
+./nmodl/noccout.c:834:	  P("_thread = _ml->_thread;\n");
+./nmodl/noccout.c:836:	  P(" _p = _ml->_data[_iml];\n");
+./nmodl/noccout.c:838:		P(" _nd = _ml->_nodelist[_iml];\n");
+./nmodl/noccout.c:867:		P("     _nd = _ml->_nodelist[_iml];\n");
+./nmodl/noccout.c:887:	  P("    _ni = _ml->_nodeindices;\n");
+./nmodl/noccout.c:889:	  P("_cntml = _ml->_nodecount;\n");
+./nmodl/noccout.c:890:	  P("_thread = _ml->_thread;\n");
+./nmodl/noccout.c:892:	  P(" _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];\n");
+./nmodl/noccout.c:893:	  P(" _nd = _ml->_nodelist[_iml];\n");
+./nmodl/Makefile.in:759:html: html-am
+./nmodl/Makefile.in:761:html-am:
+./nmodl/Makefile.in:775:install-html: install-html-am
+./nmodl/Makefile.in:777:install-html-am:
+./nmodl/Makefile.in:821:	html-am info info-am install install-am install-binPROGRAMS \
+./nmodl/Makefile.in:823:	install-exec install-exec-am install-html install-html-am \
+./nrnpython/Makefile:799:html: html-am
+./nrnpython/Makefile:801:html-am:
+./nrnpython/Makefile:815:install-html: install-html-am
+./nrnpython/Makefile:817:install-html-am:
+./nrnpython/Makefile:861:	dvi-am html html-am info info-am install install-am \
+./nrnpython/Makefile:863:	install-exec install-exec-am install-html install-html-am \
+./nrnpython/Makefile.in:799:html: html-am
+./nrnpython/Makefile.in:801:html-am:
+./nrnpython/Makefile.in:815:install-html: install-html-am
+./nrnpython/Makefile.in:817:install-html-am:
+./nrnpython/Makefile.in:861:	dvi-am html html-am info info-am install install-am \
+./nrnpython/Makefile.in:863:	install-exec install-exec-am install-html install-html-am \
+./oc/Makefile:942:html: html-am
+./oc/Makefile:944:html-am:
+./oc/Makefile:958:install-html: install-html-am
+./oc/Makefile:960:install-html-am:
+./oc/Makefile:1006:	html-am info info-am install install-am install-binPROGRAMS \
+./oc/Makefile:1008:	install-exec install-exec-am install-html install-html-am \
+./oc/Makefile.in:942:html: html-am
+./oc/Makefile.in:944:html-am:
+./oc/Makefile.in:958:install-html: install-html-am
+./oc/Makefile.in:960:install-html-am:
+./oc/Makefile.in:1006:	html-am info info-am install install-am install-binPROGRAMS \
+./oc/Makefile.in:1008:	install-exec install-exec-am install-html install-html-am \
+./nrncvode/occvode.cpp:130:	for (cml = z.cv_memb_list_; cml; cml = cml->next) {
+./nrncvode/occvode.cpp:131:		if (cml->index == CAP) {
+./nrncvode/occvode.cpp:134:		if (cml->index == EXTRACELL) {
+./nrncvode/occvode.cpp:148:	zneq_cap_v = z.cmlcap_ ? z.cmlcap_->ml->nodecount : 0;
+./nrncvode/occvode.cpp:152:	for (cml = z.cv_memb_list_; cml; cml = cml->next) {
+./nrncvode/occvode.cpp:153:		Pfridot s = (Pfridot)memb_func[cml->index].ode_count;
+./nrncvode/occvode.cpp:155:			zneq += cml->ml->nodecount * (*s)(cml->index);
+./nrncvode/occvode.cpp:190:	zneq_cap_v = z.cmlcap_ ? z.cmlcap_->ml->nodecount : 0;
+./nrncvode/occvode.cpp:220:		z.pv_[i] = &NODEV(ml->nodelist[i]);
+./nrncvode/occvode.cpp:221:		z.pvdot_[i] = &(NODERHS(ml->nodelist[i]));
+./nrncvode/occvode.cpp:249:	for (cml = z.cv_memb_list_; cml; cml = cml->next) {
+./nrncvode/occvode.cpp:251:		ml = cml->ml;
+./nrncvode/occvode.cpp:252:		mf = memb_func + cml->index;
+./nrncvode/occvode.cpp:254:		if (sc && ( (n = (*sc)(cml->index)) > 0)) {
+./nrncvode/occvode.cpp:257:				for (j=0; j < ml->nodecount; ++j) {
+./nrncvode/occvode.cpp:258:(*s)(ieq, z.pv_ + ieq, z.pvdot_ + ieq, ml->prop[j], atv + ieq);
+./nrncvode/occvode.cpp:262:				for (j=0; j < ml->nodecount; ++j) {
+./nrncvode/occvode.cpp:263:(*s)(ieq, z.pv_ + ieq, z.pvdot_ + ieq, ml->data[j], ml->pdata[j], atv + ieq, cml->index);
+./nrncvode/occvode.cpp:280:	for (cml = z.cv_memb_list_; cml; cml = cml->next) {
+./nrncvode/occvode.cpp:281:		Memb_list* ml = cml->ml;
+./nrncvode/occvode.cpp:282:		Memb_func* mf = memb_func + cml->index;
+./nrncvode/occvode.cpp:287:		for (i=0; i < ml->nodecount; ++i) {
+./nrncvode/occvode.cpp:288:			if (NODERHS(ml->nodelist[i]) > .5) {
+./nrncvode/occvode.cpp:302:		ncm->index = cml->index;
+./nrncvode/occvode.cpp:303:		ncm->ml->nodecount = n;
+./nrncvode/occvode.cpp:305:		ncm->ml->nodelist = new Node*[n];
+./nrncvode/occvode.cpp:307:		ncm->ml->nodeindices = new int[n];
+./nrncvode/occvode.cpp:310:			ncm->ml->prop = new Prop*[n];
+./nrncvode/occvode.cpp:312:			ncm->ml->data = new double*[n];
+./nrncvode/occvode.cpp:313:			ncm->ml->pdata = new Datum*[n];
+./nrncvode/occvode.cpp:315:		ncm->ml->_thread = ml->_thread; // can share this
+./nrncvode/occvode.cpp:318:		for (i=0; i < ml->nodecount; ++i) {
+./nrncvode/occvode.cpp:319:			if (NODERHS(ml->nodelist[i]) > .5) {
+./nrncvode/occvode.cpp:320:				ncm->ml->nodelist[n] = ml->nodelist[i];
+./nrncvode/occvode.cpp:322:				ncm->ml->nodeindices[n] = ml->nodeindices[i];
+./nrncvode/occvode.cpp:325:					ncm->ml->prop[n] = ml->prop[i];
+./nrncvode/occvode.cpp:327:					ncm->ml->data[n] = ml->data[i];
+./nrncvode/occvode.cpp:328:					ncm->ml->pdata[n] = ml->pdata[i];
+./nrncvode/occvode.cpp:361:	for (cml = z.cv_memb_list_; cml; cml = cml->next) {
+./nrncvode/occvode.cpp:362:		Pfridot s = (Pfridot)memb_func[cml->index].ode_count;
+./nrncvode/occvode.cpp:364:			zneq += cml->ml->nodecount * (*s)(cml->index);
+./nrncvode/occvode.cpp:422:	for (cml = z.cv_memb_list_; cml; cml = cml->next) {
+./nrncvode/occvode.cpp:424:		mf = memb_func + cml->index;
+./nrncvode/occvode.cpp:426:		if (sc && ( (n = (*sc)(cml->index)) > 0)) {
+./nrncvode/occvode.cpp:427:			Memb_list* ml = cml->ml;
+./nrncvode/occvode.cpp:430:				for (j=0; j < ml->nodecount; ++j) {
+./nrncvode/occvode.cpp:431:(*s)(ieq, z.pv_ + ieq, z.pvdot_ + ieq, ml->prop[j], atv + ieq);
+./nrncvode/occvode.cpp:435:				for (j=0; j < ml->nodecount; ++j) {
+./nrncvode/occvode.cpp:436:(*s)(ieq, z.pv_ + ieq, z.pvdot_ + ieq, ml->data[j], ml->pdata[j], atv + ieq, cml->index);
+./nrncvode/occvode.cpp:466:	for (cml = z.cv_memb_list_; cml; cml = cml->next) {
+./nrncvode/occvode.cpp:467:		Memb_func* mf = memb_func + cml->index;
+./nrncvode/occvode.cpp:470:			Memb_list* ml = cml->ml;
+./nrncvode/occvode.cpp:471:			(*s)(ml->nodecount, ml->data, ml->pdata);
+./nrncvode/occvode.cpp:632:	for (cml = z.cv_memb_list_; cml; cml = cml->next) { // probably can start at 6 or hh
+./nrncvode/occvode.cpp:633:		Memb_func* mf = memb_func + cml->index;
+./nrncvode/occvode.cpp:635:			Memb_list* ml = cml->ml;
+./nrncvode/occvode.cpp:639:				count = ml->nodecount;
+./nrncvode/occvode.cpp:641:					Node* nd = ml->nodelist[j];
+./nrncvode/occvode.cpp:642:					(*s)(nd, ml->prop[j]);
+./nrncvode/occvode.cpp:645:				(*s)(nt, ml, cml->index);
+./nrncvode/occvode.cpp:648:				if (nrn_errno_check(cml->index)) {
+./nrncvode/occvode.cpp:768:		for (i=0; i < ml->nodecount; ++i) {
+./nrncvode/occvode.cpp:769:	(*f)(ml->nodelist[i], ml->data[i], ml->pdata[i], ml->_thread, nt);
+./nrncvode/occvode.cpp:890:	for (cml = z.cv_memb_list_; cml; cml = cml->next) { // probably can start at 6 or hh
+./nrncvode/occvode.cpp:891:		mf = memb_func + cml->index;
+./nrncvode/occvode.cpp:894:			Memb_list* ml = cml->ml;
+./nrncvode/occvode.cpp:897:				count = ml->nodecount;
+./nrncvode/occvode.cpp:899:					Node* nd = ml->nodelist[j];
+./nrncvode/occvode.cpp:900:					(*s)(nd, ml->prop[j]);
+./nrncvode/occvode.cpp:903:				(*s)(_nt, ml, cml->index);
+./nrncvode/occvode.cpp:906:				if (nrn_errno_check(cml->index)) {
+./nrncvode/occvode.cpp:932:	for (cml = z.cv_memb_list_; cml; cml = cml->next) {
+./nrncvode/occvode.cpp:933:		Memb_func* mf = memb_func + cml->index;
+./nrncvode/occvode.cpp:935:	  Memb_list* ml = cml->ml;
+./nrncvode/occvode.cpp:938:		(*s)(_nt, ml, cml->index);
+./nrncvode/occvode.cpp:941:			if (nrn_errno_check(cml->index)) {
+./nrncvode/occvode.cpp:948:		(*s)(_nt, ml, cml->index);
+./nrncvode/nrndaspk.cpp:417:		int i, n = ml->nodecount;
+./nrncvode/nrndaspk.cpp:419:			Node* nd = ml->nodelist[i];
+./nrncvode/nrndaspk.cpp:439:		int i, n = ml->nodecount;
+./nrncvode/nrndaspk.cpp:441:			Node* nd = ml->nodelist[i];
+./nrncvode/nrndaspk.cpp:505:		int n = ml->nodecount;
+./nrncvode/nrndaspk.cpp:511:			double* cd = ml->data[i];
+./nrncvode/nrndaspk.cpp:512:			Node* nd = ml->nodelist[i];
+./nrncvode/nrndaspk.cpp:542:		int n = ml->nodecount;
+./nrncvode/nrndaspk.cpp:544:			double* cd = ml->data[i];
+./nrncvode/nrndaspk.cpp:545:			Node* nd = ml->nodelist[i];
+./nrncvode/cvtrset.cpp:67:	for (cml = cmlist; cml; cml = cml->next) {
+./nrncvode/cvtrset.cpp:68:		Memb_func* mf = memb_func + cml->index;
+./nrncvode/cvtrset.cpp:71:			Memb_list* ml = cml->ml;
+./nrncvode/cvtrset.cpp:72:			(*s)(_nt, ml, cml->index);
+./nrncvode/cvtrset.cpp:74:				if (nrn_errno_check(cml->index)) {
+./nrncvode/cvtrset.cpp:111:	for (cml = cmlist; cml; cml = cml->next) {
+./nrncvode/cvtrset.cpp:112:		Memb_func* mf = memb_func + cml->index;
+./nrncvode/cvtrset.cpp:113:		Memb_list* ml = cml->ml;
+./nrncvode/cvtrset.cpp:117:			(*s)(_nt, ml, cml->index);
+./nrncvode/cvtrset.cpp:119:				if (nrn_errno_check(cml->index)) {
+./nrncvode/Makefile:578:html: html-am
+./nrncvode/Makefile:580:html-am:
+./nrncvode/Makefile:594:install-html: install-html-am
+./nrncvode/Makefile:596:install-html-am:
+./nrncvode/Makefile:637:	distclean-tags distdir dvi dvi-am html html-am info info-am \
+./nrncvode/Makefile:640:	install-html-am install-info install-info-am install-man \
+./nrncvode/Makefile.in:578:html: html-am
+./nrncvode/Makefile.in:580:html-am:
+./nrncvode/Makefile.in:594:install-html: install-html-am
+./nrncvode/Makefile.in:596:install-html-am:
+./nrncvode/Makefile.in:637:	distclean-tags distdir dvi dvi-am html html-am info info-am \
+./nrncvode/Makefile.in:640:	install-html-am install-info install-info-am install-man \
+./nrncvode/netcvode.cpp:1452:				cmlnext = cml->next;
+./nrncvode/netcvode.cpp:1474:		Memb_list* ml = cml->ml;
+./nrncvode/netcvode.cpp:1475:		cmlnext = cml->next;
+./nrncvode/netcvode.cpp:1476:		delete [] ml->nodelist;
+./nrncvode/netcvode.cpp:1478:		if (ml->nodeindices) {
+./nrncvode/netcvode.cpp:1479:			delete [] ml->nodeindices;
+./nrncvode/netcvode.cpp:1482:		if (memb_func[cml->index].hoc_mech) {
+./nrncvode/netcvode.cpp:1483:			delete [] ml->prop;
+./nrncvode/netcvode.cpp:1485:			delete [] ml->data;
+./nrncvode/netcvode.cpp:1486:			delete [] ml->pdata;
+./nrncvode/netcvode.cpp:1617:		for (NrnThreadMembList* tml = _nt->tml; tml; tml = tml->next) {
+./nrncvode/netcvode.cpp:1618:		  i = tml->index;
+./nrncvode/netcvode.cpp:1620:		  Memb_list* ml = tml->ml;
+./nrncvode/netcvode.cpp:1621:		  if (ml->nodecount
+./nrncvode/netcvode.cpp:1635:			cml->next = nil;
+./nrncvode/netcvode.cpp:1636:			cml->index = i;
+./nrncvode/netcvode.cpp:1637:			cml->ml->nodecount = ml->nodecount;
+./nrncvode/netcvode.cpp:1639:			cml->ml->nodelist = ml->nodelist;
+./nrncvode/netcvode.cpp:1641:			cml->ml->nodeindices = ml->nodeindices;
+./nrncvode/netcvode.cpp:1644:				cml->ml->prop = ml->prop;
+./nrncvode/netcvode.cpp:1646:				cml->ml->data = ml->data;
+./nrncvode/netcvode.cpp:1647:				cml->ml->pdata = ml->pdata;
+./nrncvode/netcvode.cpp:1649:			cml->ml->_thread = ml->_thread;
+./nrncvode/netcvode.cpp:1658:		for (NrnThreadMembList* tml = _nt->tml; tml; tml = tml->next) {
+./nrncvode/netcvode.cpp:1659:			i = tml->index;
+./nrncvode/netcvode.cpp:1662:				Memb_list* ml = tml->ml;
+./nrncvode/netcvode.cpp:1664:				for (j = 0; j < ml->nodecount; ++j) {
+./nrncvode/netcvode.cpp:1667:						pp = (Point_process*)ml->prop[j]->dparam[1]._pvoid;
+./nrncvode/netcvode.cpp:1669:						pp = (Point_process*)ml->pdata[j][1]._pvoid;
+./nrncvode/netcvode.cpp:1723:		for (NrnThreadMembList* tml = _nt->tml; tml; tml = tml->next) {
+./nrncvode/netcvode.cpp:1724:		  i = tml->index;
+./nrncvode/netcvode.cpp:1726:		  Memb_list* ml = tml->ml;
+./nrncvode/netcvode.cpp:1727:		  if (ml->nodecount
+./nrncvode/netcvode.cpp:1734:			for (j = 0; j < ml->nodecount; ++j) {
+./nrncvode/netcvode.cpp:1735:				int inode = ml->nodelist[j]->v_node_index;
+./nrncvode/netcvode.cpp:1740:					cml->next = nil;
+./nrncvode/netcvode.cpp:1741:					cml->index = i;
+./nrncvode/netcvode.cpp:1742:					cml->ml->nodecount = 0;
+./nrncvode/netcvode.cpp:1747:					++last[cellnum[inode]]->ml->nodecount;
+./nrncvode/netcvode.cpp:1751:					cml->next = nil;
+./nrncvode/netcvode.cpp:1753:					cml->index = i;
+./nrncvode/netcvode.cpp:1754:					cml->ml->nodecount = 1;
+./nrncvode/netcvode.cpp:1764:			for (cml = cvml[i]; cml; cml = cml->next) {
+./nrncvode/netcvode.cpp:1765:				Memb_list* ml = cml->ml;
+./nrncvode/netcvode.cpp:1766:				ml->nodelist = new Node*[ml->nodecount];
+./nrncvode/netcvode.cpp:1768:				ml->nodeindices = new int[ml->nodecount];
+./nrncvode/netcvode.cpp:1770:				if (memb_func[cml->index].hoc_mech) {
+./nrncvode/netcvode.cpp:1771:					ml->prop = new Prop*[ml->nodecount];
+./nrncvode/netcvode.cpp:1773:					ml->data = new double*[ml->nodecount];
+./nrncvode/netcvode.cpp:1774:					ml->pdata = new Datum*[ml->nodecount];
+./nrncvode/netcvode.cpp:1776:				ml->nodecount = 0;
+./nrncvode/netcvode.cpp:1781:		for (NrnThreadMembList* tml = _nt->tml; tml; tml = tml->next) {
+./nrncvode/netcvode.cpp:1782:		  i = tml->index;
+./nrncvode/netcvode.cpp:1784:		  Memb_list* ml = tml->ml;
+./nrncvode/netcvode.cpp:1785:		  if (ml->nodecount
+./nrncvode/netcvode.cpp:1790:			for (j = 0; j < ml->nodecount; ++j) {
+./nrncvode/netcvode.cpp:1791:				int icell = cellnum[ml->nodelist[j]->v_node_index];
+./nrncvode/netcvode.cpp:1799:				cml->ml->nodelist[cml->ml->nodecount] = ml->nodelist[j];
+./nrncvode/netcvode.cpp:1801:				cml->ml->nodeindices[cml->ml->nodecount] = ml->nodeindices[j];
+./nrncvode/netcvode.cpp:1804:					cml->ml->prop[cml->ml->nodecount] = ml->prop[j];
+./nrncvode/netcvode.cpp:1806:					cml->ml->data[cml->ml->nodecount] = ml->data[j];
+./nrncvode/netcvode.cpp:1807:					cml->ml->pdata[cml->ml->nodecount] = ml->pdata[j];
+./nrncvode/netcvode.cpp:1809:				cml->ml->_thread = ml->_thread;
+./nrncvode/netcvode.cpp:1810:				++cml->ml->nodecount;
+./nrncvode/netcvode.cpp:1820:		for (NrnThreadMembList* tml = _nt->tml; tml; tml = tml->next) {
+./nrncvode/netcvode.cpp:1821:			i = tml->index;
+./nrncvode/netcvode.cpp:1824:				Memb_list* ml = tml->ml;
+./nrncvode/netcvode.cpp:1826:				for (j = 0; j < ml->nodecount; ++j) {
+./nrncvode/netcvode.cpp:1829:						pp = (Point_process*)ml->prop[j]->dparam[1]._pvoid;
+./nrncvode/netcvode.cpp:1831:						pp = (Point_process*)ml->pdata[j][1]._pvoid;
+./nrncvode/netcvode.cpp:1834:						int inode = ml->nodelist[j]->v_node_index;
+./nrncvode/netcvode.cpp:1870:      for (CvMembList* cml = cv->ctd_[0].cv_memb_list_; cml; cml = cml->next) {
+./nrncvode/netcvode.cpp:1871:        if (cml->index == bam->type) {
+./nrncvode/netcvode.cpp:1872:          Memb_list* ml = cml->ml;
+./nrncvode/netcvode.cpp:3956:	    FOR_THREADS(nt) for(tml = nt->tml; tml; tml = tml->next) if (tml->index == type) {
+./nrncvode/netcvode.cpp:3957:		Memb_list* m = tml->ml;
+./nrncvode/netcvode.cpp:4000:	    FOR_THREADS(nt) for(tml = nt->tml; tml; tml = tml->next) if (tml->index == nrn_fornetcon_type_[i]) {
+./nrncvode/netcvode.cpp:4001:		Memb_list* m = tml->ml;
+./mesch/Makefile:783:html: html-am
+./mesch/Makefile:785:html-am:
+./mesch/Makefile:799:install-html: install-html-am
+./mesch/Makefile:801:install-html-am:
+./mesch/Makefile:845:	html-am info info-am install install-am install-data \
+./mesch/Makefile:847:	install-exec-am install-html install-html-am install-info \
+./mesch/Makefile.in:783:html: html-am
+./mesch/Makefile.in:785:html-am:
+./mesch/Makefile.in:799:install-html: install-html-am
+./mesch/Makefile.in:801:install-html-am:
+./mesch/Makefile.in:845:	html-am info info-am install install-am install-data \
+./mesch/Makefile.in:847:	install-exec-am install-html install-html-am install-info \
+./parallel/Makefile:582:html: html-am
+./parallel/Makefile:584:html-am:
+./parallel/Makefile:598:install-html: install-html-am
+./parallel/Makefile:600:install-html-am:
+./parallel/Makefile:641:	distclean-tags distdir dvi dvi-am html html-am info info-am \
+./parallel/Makefile:644:	install-html-am install-info install-info-am install-man \
+./parallel/Makefile.in:582:html: html-am
+./parallel/Makefile.in:584:html-am:
+./parallel/Makefile.in:598:install-html: install-html-am
+./parallel/Makefile.in:600:install-html-am:
+./parallel/Makefile.in:641:	distclean-tags distdir dvi dvi-am html html-am info info-am \
+./parallel/Makefile.in:644:	install-html-am install-info install-info-am install-man \
+./neuronmusic/Makefile:616:html: html-am
+./neuronmusic/Makefile:618:html-am:
+./neuronmusic/Makefile:630:install-html: install-html-am
+./neuronmusic/Makefile:632:install-html-am:
+./neuronmusic/Makefile:673:	dvi-am html html-am info info-am install install-am \
+./neuronmusic/Makefile:675:	install-exec install-exec-am install-html install-html-am \
+./neuronmusic/Makefile.in:616:html: html-am
+./neuronmusic/Makefile.in:618:html-am:
+./neuronmusic/Makefile.in:630:install-html: install-html-am
+./neuronmusic/Makefile.in:632:install-html-am:
+./neuronmusic/Makefile.in:673:	dvi-am html html-am info info-am install install-am \
+./neuronmusic/Makefile.in:675:	install-exec install-exec-am install-html install-html-am \
+./readline/Makefile:703:html: html-am
+./readline/Makefile:705:html-am:
+./readline/Makefile:719:install-html: install-html-am
+./readline/Makefile:721:install-html-am:
+./readline/Makefile:765:	html-am info info-am install install-am install-data \
+./readline/Makefile:767:	install-exec-am install-html install-html-am install-info \
+./readline/Makefile.in:703:html: html-am
+./readline/Makefile.in:705:html-am:
+./readline/Makefile.in:719:install-html: install-html-am
+./readline/Makefile.in:721:install-html-am:
+./readline/Makefile.in:765:	html-am info info-am install install-am install-data \
+./readline/Makefile.in:767:	install-exec-am install-html install-html-am install-info \
+./ivoc/Makefile:938:html: html-am
+./ivoc/Makefile:940:html-am:
+./ivoc/Makefile:954:install-html: install-html-am
+./ivoc/Makefile:956:install-html-am:
+./ivoc/Makefile:1001:	distclean-tags distdir dvi dvi-am html html-am info info-am \
+./ivoc/Makefile:1004:	install-exec-am install-html install-html-am install-info \
+./ivoc/Makefile.in:938:html: html-am
+./ivoc/Makefile.in:940:html-am:
+./ivoc/Makefile.in:954:install-html: install-html-am
+./ivoc/Makefile.in:956:install-html-am:
+./ivoc/Makefile.in:1001:	distclean-tags distdir dvi dvi-am html html-am info info-am \
+./ivoc/Makefile.in:1004:	install-exec-am install-html install-html-am install-info \
+./nrniv/prcellstate.cpp:32:  for (int i = 0; i < ml->nodecount; ++i) {
+./nrniv/prcellstate.cpp:33:    int inode = ml->nodeindices[i];
+./nrniv/prcellstate.cpp:41:        Point_process* pp = (Point_process*)ml->pdata[i][1]._pvoid;
+./nrniv/prcellstate.cpp:46:        fprintf(f, " %d %d %.*g\n", cellnodes[inode], j, precision, ml->data[i][j]);
+./nrniv/prcellstate.cpp:168:  for (NrnThreadMembList* tml = nt.tml; tml; tml = tml->next) {
+./nrniv/prcellstate.cpp:169:    pr_memb(tml->index, tml->ml, cellnodes, nt, f);
+./nrniv/nrnbbcore_write.cpp:76:nt->tml->pdata is not cache_efficient
+./nrniv/nrnbbcore_write.cpp:275:      mechcnt_instances += ml->nodecount;
+./nrniv/nrnbbcore_write.cpp:276:      npnt += (memb_func[type].is_point ? ml->nodecount : 0);
+./nrniv/nrnbbcore_write.cpp:279:      //printf("%d %s ispnt %d  cnt %d  psize %d  dpsize %d\n",tml->index, memb_func[type].sym->name,
+./nrniv/nrnbbcore_write.cpp:280:      //memb_func[type].is_point, ml->nodecount, psize, dpsize);
+./nrniv/nrnbbcore_write.cpp:284:        nart += ml->nodecount;
+./nrniv/nrnbbcore_write.cpp:286:      nbytes = ml->nodecount * (notart*sizeof(int) + 1*sizeof(double*) +
+./nrniv/nrnbbcore_write.cpp:354:        delete [] ml->data;
+./nrniv/nrnbbcore_write.cpp:355:        delete [] ml->pdata;
+./nrniv/nrnbbcore_write.cpp:402:    for (NrnThreadMembList* tml = nrn_threads[id].tml; tml; tml = tml->next) {
+./nrniv/nrnbbcore_write.cpp:403:      mla.push_back(MlWithArtItem(tml->index, tml->ml));
+./nrniv/nrnbbcore_write.cpp:429:          ml->nodecount = acnt[id];
+./nrniv/nrnbbcore_write.cpp:430:          ml->nodelist = NULL;
+./nrniv/nrnbbcore_write.cpp:431:          ml->nodeindices = NULL;
+./nrniv/nrnbbcore_write.cpp:432:          ml->prop = NULL;
+./nrniv/nrnbbcore_write.cpp:433:          ml->_thread = NULL;
+./nrniv/nrnbbcore_write.cpp:434:          ml->data = new double*[acnt[id]];
+./nrniv/nrnbbcore_write.cpp:435:          ml->pdata = new Datum*[acnt[id]];
+./nrniv/nrnbbcore_write.cpp:445:        ml->data[acnt[id]] = memb_list[i].data[j];
+./nrniv/nrnbbcore_write.cpp:446:        ml->pdata[acnt[id]] = memb_list[i].pdata[j];
+./nrniv/nrnbbcore_write.cpp:447:        artdata2index_->insert(ml->data[acnt[id]], acnt[id]);
+./nrniv/nrnbbcore_write.cpp:547:        double* d1 = ml->data[0];
+./nrniv/nrnbbcore_write.cpp:549:        assert(d2 >= d1 && d2 < (d1 + (sz*ml->nodecount)));
+./nrniv/nrnbbcore_write.cpp:574:            double* d1 = ml->data[0];
+./nrniv/nrnbbcore_write.cpp:576:            assert(d2 >= d1 && d2 < (d1 + (sz*ml->nodecount)));
+./nrniv/nrnbbcore_write.cpp:603:        npre += ml->nodecount;
+./nrniv/nrnbbcore_write.cpp:627:        for (int j=0; j < ml->nodecount; ++j) {
+./nrniv/nrnbbcore_write.cpp:628:          Point_process* pnt = (Point_process*)ml->pdata[j][1]._pvoid;
+./nrniv/nrnbbcore_write.cpp:636:            double* d1 = ml->data[0];
+./nrniv/nrnbbcore_write.cpp:638:            assert(d2 >= d1 && d2 < (d1 + (sz*ml->nodecount)));
+./nrniv/nrnbbcore_write.cpp:693:      if (ml->pdata[0]) {
+./nrniv/nrnbbcore_write.cpp:707:        int n = ml->nodecount * sz;
+./nrniv/nrnbbcore_write.cpp:722:  int mcnt = ml->nodecount;
+./nrniv/nrnbbcore_write.cpp:727:  // what is the size of the nt._vdata portion needed for a single ml->dparam[i]
+./nrniv/nrnbbcore_write.cpp:739:    // ie. ml->pdata[i] are not laid out end to end in memory.
+./nrniv/nrnbbcore_write.cpp:740:    // Also, ml->data for artificial cells is not in cache efficient order
+./nrniv/nrnbbcore_write.cpp:743:    Datum* dparam = ml->pdata[i];
+./nrniv/nrnbbcore_write.cpp:754:          if (dparam[j].pval == &ml->nodelist[i]->_area) {
+./nrniv/nrnbbcore_write.cpp:759:            eindex = ml->nodeindices[i];
+./nrniv/nrnbbcore_write.cpp:760:            assert(a[ml->nodeindices[i]] == *dparam[j].pval);
+./nrniv/nrnbbcore_write.cpp:800:        Node* nd = ml->nodelist[i];
+./nrniv/nrnbbcore_write.cpp:809:        eindex = ml->nodeindices[i];
+./nrniv/nrnbbcore_write.cpp:819:          for (NrnThreadMembList* tml = nt.tml; tml; tml = tml->next) {
+./nrniv/nrnbbcore_write.cpp:820:            if (nrn_is_artificial_[tml->index]) { continue; }
+./nrniv/nrnbbcore_write.cpp:821:            Memb_list* ml1 = tml->ml;
+./nrniv/nrnbbcore_write.cpp:822:            int nn = nrn_prop_param_size_[tml->index] * ml1->nodecount;
+./nrniv/nrnbbcore_write.cpp:824:              etype = tml->index;
+./nrniv/nrnbbcore_write.cpp:836:        if(dparam[j].pval < eml->data[0]){
+./nrniv/nrnbbcore_write.cpp:838:              memb_func[di.type].sym->name, dparam[j].pval, eml->data[0], j,
+./nrniv/nrnbbcore_write.cpp:842:        assert(dparam[j].pval >= eml->data[0]);
+./nrniv/nrnbbcore_write.cpp:844:        if (dparam[j].pval >= (eml->data[0] +
+./nrniv/nrnbbcore_write.cpp:845:              (nrn_prop_param_size_[etype] * eml->nodecount))) {
+./nrniv/nrnbbcore_write.cpp:847:              memb_func[di.type].sym->name, dparam[j].pval, eml->data[0], j,
+./nrniv/nrnbbcore_write.cpp:849:              eml->nodecount, etype, memb_func[etype].sym->name);
+./nrniv/nrnbbcore_write.cpp:851:        assert(dparam[j].pval < (eml->data[0] +
+./nrniv/nrnbbcore_write.cpp:852:              (nrn_prop_param_size_[etype] * eml->nodecount)));
+./nrniv/nrnbbcore_write.cpp:853:        eindex = dparam[j].pval - eml->data[0];
+./nrniv/nrnbbcore_write.cpp:1077:          for (NrnThreadMembList* tml = nt.tml; tml; tml = tml->next) {
+./nrniv/nrnbbcore_write.cpp:1078:            if (nrn_is_artificial_[tml->index]) { continue; }
+./nrniv/nrnbbcore_write.cpp:1079:            Memb_list* ml = tml->ml;
+./nrniv/nrnbbcore_write.cpp:1080:            int nn = nrn_prop_param_size_[tml->index] * ml->nodecount;
+./nrniv/nrnbbcore_write.cpp:1081:            if (pd >= ml->data[0] && pd < (ml->data[0] + nn)) {
+./nrniv/nrnbbcore_write.cpp:1082:              mtype = tml->index;
+./nrniv/nrnbbcore_write.cpp:1083:              ix = (pd - ml->data[0]);
+./nrniv/nrnbbcore_write.cpp:1155:    ml_nodecount[j] = ml->nodecount;
+./nrniv/nrnbbcore_write.cpp:1161:        vdata_offset += ml->nodecount;
+./nrniv/nrnbbcore_write.cpp:1236:    int n = ml->nodecount;
+./nrniv/nrnbbcore_write.cpp:1240:      data1 = contiguous_art_data(ml->data, n, sz); // delete after use
+./nrniv/nrnbbcore_write.cpp:1243:      nodeindices = ml->nodeindices;
+./nrniv/nrnbbcore_write.cpp:1244:      data1 = ml->data[0]; // do not delete after use
+./nrniv/nrnbbcore_write.cpp:1248:        nodeindices[i] = ml->nodeindices[i];
+./nrniv/nrnbbcore_write.cpp:1345:      for (int i = 0; i < ml->nodecount; ++i) {
+./nrniv/nrnbbcore_write.cpp:1346:        (*nrn_bbcore_write_[type])(NULL, NULL, &dcnt, &icnt, ml->data[i], ml->pdata[i], ml->_thread, &nt);
+./nrniv/nrnbbcore_write.cpp:1360:      for (int i = 0; i < ml->nodecount; ++i) {
+./nrniv/nrnbbcore_write.cpp:1361:        (*nrn_bbcore_write_[type])(dArray, iArray, &dcnt, &icnt, ml->data[i], ml->pdata[i], ml->_thread, &nt);
+./nrniv/nrnbbcore_write.cpp:1445:    int n = ml->nodecount;
+./nrniv/nrnbbcore_write.cpp:1631:  int* pdata = new int[ml->nodecount * sz];
+./nrniv/nrnbbcore_write.cpp:1632:  for (int i=0; i < ml->nodecount; ++i) {
+./nrniv/nrnbbcore_write.cpp:1633:    Datum* d = ml->pdata[i];
+./nrniv/nonlinz.cpp:229:	for (NrnThreadMembList* tml = _nt->tml; tml; tml = tml->next) {
+./nrniv/nonlinz.cpp:230:		Memb_list* ml = tml->ml;
+./nrniv/nonlinz.cpp:231:		i = tml->index;
+./nrniv/nonlinz.cpp:235:			n_ode_ += cnt * ml->nodecount;
+./nrniv/nonlinz.cpp:288:	for (NrnThreadMembList* tml = nt->tml; tml; tml = tml->next) {
+./nrniv/nonlinz.cpp:289:		Memb_list* ml = tml->ml;
+./nrniv/nonlinz.cpp:290:		i = tml->index;
+./nrniv/nonlinz.cpp:291:		nc = ml->nodecount;
+./nrniv/nonlinz.cpp:296:(*s)(ieq, pv_ + ieq, pvdot_ + ieq, ml->data[j], ml->pdata[j], deltavec_ + ieq, i);
+./nrniv/nonlinz.cpp:322:	Memb_list* mlc = _nt->tml->ml;
+./nrniv/nonlinz.cpp:340:	for (NrnThreadMembList* tml = _nt->tml; tml; tml = tml->next) {
+./nrniv/nonlinz.cpp:341:		i = tml->index;
+./nrniv/nonlinz.cpp:344:		Memb_list* ml = tml->ml;
+./nrniv/nonlinz.cpp:347:		for (j = 0; j < ml->nodecount; ++j) { Node* nd = ml->nodelist[j];
+./nrniv/nonlinz.cpp:376:	for (NrnThreadMembList* tml = nt->tml; tml; tml = tml->next) {
+./nrniv/nonlinz.cpp:377:	  Memb_list* ml = tml->ml;
+./nrniv/nonlinz.cpp:378:	  i = tml->index;
+./nrniv/nonlinz.cpp:379:	  if (memb_func[i].ode_count && ml->nodecount) {
+./nrniv/nonlinz.cpp:380:		int nc = ml->nodecount;
+./nrniv/nonlinz.cpp:386:		for (in = 0; in < ml->nodecount; ++in) { Node* nd = ml->nodelist[in];
+./nrniv/nonlinz.cpp:423:	for (NrnThreadMembList* tml = nt->tml; tml; tml = tml->next) {
+./nrniv/nonlinz.cpp:424:	  Memb_list* ml = tml->ml;
+./nrniv/nonlinz.cpp:425:	  i = tml->index;
+./nrniv/nonlinz.cpp:426:	  if (memb_func[i].ode_count && ml->nodecount) {
+./nrniv/nonlinz.cpp:427:		int nc = ml->nodecount;
+./nrniv/nonlinz.cpp:434:		for (in = 0; in < ml->nodecount; ++in) { Node* nd = ml->nodelist[in];
+./nrniv/nonlinz.cpp:442:		for (in = 0; in < ml->nodecount; ++in) { Node* nd = ml->nodelist[in];
+./nrniv/nonlinz.cpp:450:		for (in = 0; in < ml->nodecount; ++in) { Node* nd = ml->nodelist[in];
+./nrniv/nonlinz.cpp:460:		for (in = 0; in < ml->nodecount; ++in) { Node* nd = ml->nodelist[in];
+./nrniv/nonlinz.cpp:483:	for (NrnThreadMembList* tml = nt->tml; tml; tml = tml->next) {
+./nrniv/nonlinz.cpp:484:	  Memb_list* ml = tml->ml;
+./nrniv/nonlinz.cpp:485:	  i = tml->index;
+./nrniv/nonlinz.cpp:486:	  if (memb_func[i].ode_count && ml->nodecount) {
+./nrniv/nonlinz.cpp:487:		int nc = ml->nodecount;
+./nrniv/nonlinz.cpp:493:		for (in = 0; in < ml->nodecount; ++in) {
+./nrniv/nonlinz.cpp:502:		for (in = 0; in < ml->nodecount; ++in) {
+./nrniv/nonlinz.cpp:510:		for (in = 0; in < ml->nodecount; ++in) {
+./nrniv/nonlinz.cpp:520:		for (in = 0; in < ml->nodecount; ++in) { Node* nd = ml->nodelist[in];
+./nrniv/nonlinz.cpp:545:	mfake.nodeindices = ml->nodeindices + in;
+./nrniv/nonlinz.cpp:547:	mfake.nodelist = ml->nodelist+in;
+./nrniv/nonlinz.cpp:548:	mfake.data = ml->data + in;
+./nrniv/nonlinz.cpp:549:	mfake.pdata = ml->pdata + in;
+./nrniv/nonlinz.cpp:550:	mfake.prop = ml->prop + in;
+./nrniv/nonlinz.cpp:552:	mfake._thread = ml->_thread;
+./nrniv/nonlinz.cpp:559:	nc = ml->nodecount;
+./nrniv/nonlinz.cpp:562:		count = ml->nodecount;
+./nrniv/nonlinz.cpp:564:			Node* nd = ml->nodelist[j];
+./nrniv/nonlinz.cpp:565:			(*s)(nd, ml->prop[j]);
+Binary file ./nrniv/.libs/nrnbbcore_write.o matches
+Binary file ./nrniv/.libs/cxprop.o matches
+Binary file ./nrniv/.libs/libnrniv.so.0.0.0 matches
+Binary file ./nrniv/.libs/impedanc.o matches
+./nrniv/hocmech.cpp:173:	int i, cnt = ml->nodecount;
+./nrniv/hocmech.cpp:175:		call(hm->initial, ml->nodelist[i], ml->prop[i]);
+./nrniv/hocmech.cpp:181:	int i, cnt = ml->nodecount;
+./nrniv/hocmech.cpp:183:		call(hm->after_step, ml->nodelist[i], ml->prop[i]);
+./nrniv/Makefile:1022:html: html-am
+./nrniv/Makefile:1024:html-am:
+./nrniv/Makefile:1038:install-html: install-html-am
+./nrniv/Makefile:1040:install-html-am:
+./nrniv/Makefile:1085:	distclean-tags distdir dvi dvi-am html html-am info info-am \
+./nrniv/Makefile:1088:	install-exec-am install-html install-html-am install-info \
+./nrniv/partrans.cpp:923:      for (NrnThreadMembList* tml = nt->tml; tml; tml = tml->next) {
+./nrniv/partrans.cpp:924:        if (imped_current_type_[k] == tml->index) {
+./nrniv/partrans.cpp:925:          imped_current_ml_[k] = tml->ml;
+./nrniv/partrans.cpp:1188:    for (NrnThreadMembList* tml = nt.tml; tml; tml = tml->next) {
+./nrniv/partrans.cpp:1189:      if (tml->index == type) {
+./nrniv/partrans.cpp:1190:        gi[tid].gap_ml = tml->ml;
+./nrniv/partrans.cpp:1201:    int ix = targets_->item(i) - ml->data[0];
+./nrniv/Makefile.in:1022:html: html-am
+./nrniv/Makefile.in:1024:html-am:
+./nrniv/Makefile.in:1038:install-html: install-html-am
+./nrniv/Makefile.in:1040:install-html-am:
+./nrniv/Makefile.in:1085:	distclean-tags distdir dvi dvi-am html html-am info info-am \
+./nrniv/Makefile.in:1088:	install-exec-am install-html install-html-am install-info \
+./nrniv/kschan.cpp:72:	c->init(ml->nodecount, ml->nodelist, ml->data, ml->pdata, nt);
+./nrniv/kschan.cpp:80:		c->cur(ml->nodecount, ml->nodeindices, ml->data, ml->pdata, nt);
+./nrniv/kschan.cpp:84:		c->cur(ml->nodecount, ml->nodelist, ml->data, ml->pdata);
+./nrniv/kschan.cpp:93:		c->jacob(ml->nodecount, ml->nodeindices, ml->data, ml->pdata, nt);
+./nrniv/kschan.cpp:97:		c->jacob(ml->nodecount, ml->nodelist, ml->data, ml->pdata);
+./nrniv/kschan.cpp:106:		c->state(ml->nodecount, ml->nodeindices, ml->nodelist, ml->data,
+./nrniv/kschan.cpp:107:				ml->pdata, nt);
+./nrniv/kschan.cpp:111:		c->state(ml->nodecount, ml->nodelist, ml->data, ml->pdata, nt);
+./nrniv/kschan.cpp:129:	c->spec(ml->nodecount, ml->nodelist, ml->data, ml->pdata);
+./nrniv/kschan.cpp:134:	c->matsol(ml->nodecount, ml->nodelist, ml->data, ml->pdata, nt);
+./nrniv/kschan.cpp:139:	c->cv_sc_update(ml->nodecount, ml->nodelist, ml->data, ml->pdata, nt);
+./nrniv/kschan.cpp:3033:		for (NrnThreadMembList* tml = nrn_threads[i].tml; tml; tml = tml->next) {
+./nrniv/kschan.cpp:3034:			if (tml->index == type) {
+./nrniv/impedanc.cpp:463:	Memb_list* mlc = _nt->tml->ml;
+./nrniv/impedanc.cpp:465:	assert(_nt->tml->index == CAP);
+./nrniv/cxprop.cpp:56:Based on the nrn_threads tml->ml->nodelist order from the last
+./nrniv/cxprop.cpp:71:type i seq // i is the tml->ml->data[i], seq is the allocation order
+./nrniv/cxprop.cpp:329:		for (NrnThreadMembList* tml = nt->tml; tml; tml = tml->next) {
+./nrniv/cxprop.cpp:330:			Memb_list* ml = tml->ml;
+./nrniv/cxprop.cpp:331:			int i = tml->index;
+./nrniv/cxprop.cpp:332:		    if (ml->nodecount > 0) {
+./nrniv/cxprop.cpp:338:			if (p[i]->chain_size() != ml->nodecount) {
+./nrniv/cxprop.cpp:339://printf("thread %d mechanism %s chain_size %d nodecount=%d\n", it, memb_func[i].sym->name, p[i]->chain_size(), ml->nodecount);
+./nrniv/cxprop.cpp:344:			for (int j = 0; j < ml->nodecount; ++j) {
+./nrniv/cxprop.cpp:345:				if (p[i]->element(j) != ml->data[j]) {
+./nrniv/cxprop.cpp:347://it, memb_func[i].sym->name, j, p[i]->element(j), (ml->data + j));
+./nrniv/cxprop.cpp:409:		for (NrnThreadMembList* tml = nt->tml; tml; tml = tml->next) {
+./nrniv/cxprop.cpp:410:			++types[tml->index];
+./nrniv/cxprop.cpp:421:			for (NrnThreadMembList* tml = nt->tml; tml; tml = tml->next) if (i == tml->index) {
+./nrniv/cxprop.cpp:422:				ml_total_count += tml->ml->nodecount;
+./nrniv/cxprop.cpp:424:					newpool = new DoubleArrayPool(tml->ml->nodecount, oldpool->d2());
+./nrniv/cxprop.cpp:426:					newpool->grow(tml->ml->nodecount);
+./nrniv/cxprop.cpp:439:		// reset ml->data pointers to the new pool and copy the values
+./nrniv/cxprop.cpp:441:			for (NrnThreadMembList* tml = nt->tml; tml; tml = tml->next) if (i == tml->index) {
+./nrniv/cxprop.cpp:442:				Memb_list* ml = tml->ml;
+./nrniv/cxprop.cpp:443:				for (int j=0; j < ml->nodecount; ++j) {
+./nrniv/cxprop.cpp:444:					double* data = ml->data[j];
+./nrniv/cxprop.cpp:446:					ml->data[j] = newpool->alloc();
+./nrniv/cxprop.cpp:448:						ml->data[j][k] = data[k];
+./nrniv/cxprop.cpp:458:				if (s) for (int j=0; j < ml->nodecount; ++j) {
+./nrniv/cxprop.cpp:459:					(*s)(ml->pdata[j]);
+./nrniv/cxprop.cpp:519:		for (NrnThreadMembList* tml = nt->tml; tml; tml = tml->next) {
+./nrniv/cxprop.cpp:520:			mlmap[tml->index] = tml->ml;
+./nrniv/cxprop.cpp:521:			tml->ml->nodecount = 0;
+./nrniv/cxprop.cpp:532:					assert(ml->nodelist[ml->nodecount] == nd);
+./nrniv/cxprop.cpp:534:						p->param = ml->data[ml->nodecount];
+./nrniv/cxprop.cpp:536:					++ml->nodecount;
+./nrniv/cxprop.cpp:601:	i=0; for (NrnThreadMembList* tml = nt->tml; tml; tml = tml->next) { ++i; }
+./nrniv/cxprop.cpp:603:	for (NrnThreadMembList* tml = nt->tml; tml; tml = tml->next) {
+./nrniv/cxprop.cpp:604:		Memb_list* ml = tml->ml;
+./nrniv/cxprop.cpp:605:		i = tml->index;
+./nrniv/cxprop.cpp:606:		int j, cnt = ml->nodecount;
+./nrniv/cxprop.cpp:622:	int cnt=0; for (NrnThreadMembList* tml = nt->tml; tml; tml = tml->next) {
+./nrniv/cxprop.cpp:623:		cnt += tml->ml->nodecount;
+./nrniv/cxprop.cpp:624:		tml->ml->nodecount = 0; // recount them below
+./nrniv/cxprop.cpp:625:		mlmap[tml->index] = tml->ml;
+./nrniv/cxprop.cpp:637:if(!ml || nd != ml->nodelist[ml->nodecount]) { abort(); }
+./nrniv/cxprop.cpp:638:				assert(ml && nd == ml->nodelist[ml->nodecount]);
+./nrniv/cxprop.cpp:639:assert(fprintf(f, "%d %d %ld\n", p->type, ml->nodecount++, p->_alloc_seq) > 0);
+./modlunit/Makefile:742:html: html-am
+./modlunit/Makefile:744:html-am:
+./modlunit/Makefile:758:install-html: install-html-am
+./modlunit/Makefile:760:install-html-am:
+./modlunit/Makefile:804:	html-am info info-am install install-am install-binPROGRAMS \
+./modlunit/Makefile:806:	install-exec install-exec-am install-html install-html-am \
+./modlunit/Makefile.in:742:html: html-am
+./modlunit/Makefile.in:744:html-am:
+./modlunit/Makefile.in:758:install-html: install-html-am
+./modlunit/Makefile.in:760:install-html-am:
+./modlunit/Makefile.in:804:	html-am info info-am install install-am install-binPROGRAMS \
+./modlunit/Makefile.in:806:	install-exec install-exec-am install-html install-html-am \
+./sparse13/Makefile:737:html: html-am
+./sparse13/Makefile:739:html-am:
+./sparse13/Makefile:753:install-html: install-html-am
+./sparse13/Makefile:755:install-html-am:
+./sparse13/Makefile:799:	html-am info info-am install install-am install-data \
+./sparse13/Makefile:801:	install-exec-am install-html install-html-am install-info \
+./sparse13/Makefile.in:737:html: html-am
+./sparse13/Makefile.in:739:html-am:
+./sparse13/Makefile.in:753:install-html: install-html-am
+./sparse13/Makefile.in:755:install-html-am:
+./sparse13/Makefile.in:799:	html-am info info-am install install-am install-data \
+./sparse13/Makefile.in:801:	install-exec-am install-html install-html-am install-info \
+./Makefile:136:	ctags-recursive dvi-recursive html-recursive info-recursive \
+./Makefile:138:	install-exec-recursive install-html-recursive \
+./Makefile:716:html: html-recursive
+./Makefile:718:html-am:
+./Makefile:733:install-html: install-html-recursive
+./Makefile:735:install-html-am:
+./Makefile:778:	html-am info info-am install install-am install-data \
+./Makefile:780:	install-exec-am install-exec-hook install-html install-html-am \
+./gnu/Makefile:733:html: html-am
+./gnu/Makefile:735:html-am:
+./gnu/Makefile:749:install-html: install-html-am
+./gnu/Makefile:751:install-html-am:
+./gnu/Makefile:795:	html-am info info-am install install-am install-data \
+./gnu/Makefile:797:	install-exec-am install-html install-html-am install-info \
+./gnu/Makefile.in:733:html: html-am
+./gnu/Makefile.in:735:html-am:
+./gnu/Makefile.in:749:install-html: install-html-am
+./gnu/Makefile.in:751:install-html-am:
+./gnu/Makefile.in:795:	html-am info info-am install install-am install-data \
+./gnu/Makefile.in:797:	install-exec-am install-html install-html-am install-info \
+./scopmath/Makefile:804:html: html-am
+./scopmath/Makefile:806:html-am:
+./scopmath/Makefile:820:install-html: install-html-am
+./scopmath/Makefile:822:install-html-am:
+./scopmath/Makefile:866:	html-am info info-am install install-am install-data \
+./scopmath/Makefile:868:	install-exec-am install-html install-html-am install-info \
+./scopmath/Makefile.in:804:html: html-am
+./scopmath/Makefile.in:806:html-am:
+./scopmath/Makefile.in:820:install-html: install-html-am
+./scopmath/Makefile.in:822:install-html-am:
+./scopmath/Makefile.in:866:	html-am info info-am install install-am install-data \
+./scopmath/Makefile.in:868:	install-exec-am install-html install-html-am install-info \
+./nrnmpi/Makefile:711:html: html-am
+./nrnmpi/Makefile:713:html-am:
+./nrnmpi/Makefile:727:install-html: install-html-am
+./nrnmpi/Makefile:729:install-html-am:
+./nrnmpi/Makefile:773:	html-am info info-am install install-am install-data \
+./nrnmpi/Makefile:775:	install-exec-am install-html install-html-am install-info \
+./nrnmpi/Makefile.in:711:html: html-am
+./nrnmpi/Makefile.in:713:html-am:
+./nrnmpi/Makefile.in:727:install-html: install-html-am
+./nrnmpi/Makefile.in:729:install-html-am:
+./nrnmpi/Makefile.in:773:	html-am info info-am install install-am install-data \
+./nrnmpi/Makefile.in:775:	install-exec-am install-html install-html-am install-info \
+./mswin/lib/Makefile:500:html: html-am
+./mswin/lib/Makefile:502:html-am:
+./mswin/lib/Makefile:516:install-html: install-html-am
+./mswin/lib/Makefile:518:install-html-am:
+./mswin/lib/Makefile:558:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./mswin/lib/Makefile:561:	install-html-am install-info install-info-am install-man \
+./mswin/lib/Makefile.in:500:html: html-am
+./mswin/lib/Makefile.in:502:html-am:
+./mswin/lib/Makefile.in:516:install-html: install-html-am
+./mswin/lib/Makefile.in:518:install-html-am:
+./mswin/lib/Makefile.in:558:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./mswin/lib/Makefile.in:561:	install-html-am install-info install-info-am install-man \
+./mswin/rdln/Makefile:497:html: html-am
+./mswin/rdln/Makefile:499:html-am:
+./mswin/rdln/Makefile:513:install-html: install-html-am
+./mswin/rdln/Makefile:515:install-html-am:
+./mswin/rdln/Makefile:555:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./mswin/rdln/Makefile:558:	install-html-am install-info install-info-am install-man \
+./mswin/rdln/Makefile.in:497:html: html-am
+./mswin/rdln/Makefile.in:499:html-am:
+./mswin/rdln/Makefile.in:513:install-html: install-html-am
+./mswin/rdln/Makefile.in:515:install-html-am:
+./mswin/rdln/Makefile.in:555:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./mswin/rdln/Makefile.in:558:	install-html-am install-info install-info-am install-man \
+./mswin/windll/Makefile:495:html: html-am
+./mswin/windll/Makefile:497:html-am:
+./mswin/windll/Makefile:511:install-html: install-html-am
+./mswin/windll/Makefile:513:install-html-am:
+./mswin/windll/Makefile:553:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./mswin/windll/Makefile:556:	install-html-am install-info install-info-am install-man \
+./mswin/windll/Makefile.in:495:html: html-am
+./mswin/windll/Makefile.in:497:html-am:
+./mswin/windll/Makefile.in:511:install-html: install-html-am
+./mswin/windll/Makefile.in:513:install-html-am:
+./mswin/windll/Makefile.in:553:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./mswin/windll/Makefile.in:556:	install-html-am install-info install-info-am install-man \
+./mswin/bin/Makefile:497:html: html-am
+./mswin/bin/Makefile:499:html-am:
+./mswin/bin/Makefile:513:install-html: install-html-am
+./mswin/bin/Makefile:515:install-html-am:
+./mswin/bin/Makefile:555:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./mswin/bin/Makefile:558:	install-html-am install-info install-info-am install-man \
+./mswin/bin/Makefile.in:497:html: html-am
+./mswin/bin/Makefile.in:499:html-am:
+./mswin/bin/Makefile.in:513:install-html: install-html-am
+./mswin/bin/Makefile.in:515:install-html-am:
+./mswin/bin/Makefile.in:555:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./mswin/bin/Makefile.in:558:	install-html-am install-info install-info-am install-man \
+./mswin/extra/Makefile:499:html: html-am
+./mswin/extra/Makefile:501:html-am:
+./mswin/extra/Makefile:515:install-html: install-html-am
+./mswin/extra/Makefile:517:install-html-am:
+./mswin/extra/Makefile:557:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./mswin/extra/Makefile:560:	install-html-am install-info install-info-am install-man \
+./mswin/extra/Makefile.in:499:html: html-am
+./mswin/extra/Makefile.in:501:html-am:
+./mswin/extra/Makefile.in:515:install-html: install-html-am
+./mswin/extra/Makefile.in:517:install-html-am:
+./mswin/extra/Makefile.in:557:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./mswin/extra/Makefile.in:560:	install-html-am install-info install-info-am install-man \
+./mswin/Makefile:137:	ctags-recursive dvi-recursive html-recursive info-recursive \
+./mswin/Makefile:139:	install-exec-recursive install-html-recursive \
+./mswin/Makefile:692:html: html-recursive
+./mswin/Makefile:694:html-am:
+./mswin/Makefile:708:install-html: install-html-recursive
+./mswin/Makefile:710:install-html-am:
+./mswin/Makefile:751:	distclean-tags distdir dvi dvi-am html html-am info info-am \
+./mswin/Makefile:754:	install-html-am install-info install-info-am install-man \
+./mswin/wnrnbbs/Makefile:498:html: html-am
+./mswin/wnrnbbs/Makefile:500:html-am:
+./mswin/wnrnbbs/Makefile:514:install-html: install-html-am
+./mswin/wnrnbbs/Makefile:516:install-html-am:
+./mswin/wnrnbbs/Makefile:556:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./mswin/wnrnbbs/Makefile:559:	install-html-am install-info install-info-am install-man \
+./mswin/wnrnbbs/Makefile.in:498:html: html-am
+./mswin/wnrnbbs/Makefile.in:500:html-am:
+./mswin/wnrnbbs/Makefile.in:514:install-html: install-html-am
+./mswin/wnrnbbs/Makefile.in:516:install-html-am:
+./mswin/wnrnbbs/Makefile.in:556:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./mswin/wnrnbbs/Makefile.in:559:	install-html-am install-info install-info-am install-man \
+./mswin/Makefile.in:137:	ctags-recursive dvi-recursive html-recursive info-recursive \
+./mswin/Makefile.in:139:	install-exec-recursive install-html-recursive \
+./mswin/Makefile.in:692:html: html-recursive
+./mswin/Makefile.in:694:html-am:
+./mswin/Makefile.in:708:install-html: install-html-recursive
+./mswin/Makefile.in:710:install-html-am:
+./mswin/Makefile.in:751:	distclean-tags distdir dvi dvi-am html html-am info info-am \
+./mswin/Makefile.in:754:	install-html-am install-info install-info-am install-man \
+./mswin/batch/Makefile:497:html: html-am
+./mswin/batch/Makefile:499:html-am:
+./mswin/batch/Makefile:513:install-html: install-html-am
+./mswin/batch/Makefile:515:install-html-am:
+./mswin/batch/Makefile:555:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./mswin/batch/Makefile:558:	install-html-am install-info install-info-am install-man \
+./mswin/batch/Makefile.in:497:html: html-am
+./mswin/batch/Makefile.in:499:html-am:
+./mswin/batch/Makefile.in:513:install-html: install-html-am
+./mswin/batch/Makefile.in:515:install-html-am:
+./mswin/batch/Makefile.in:555:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./mswin/batch/Makefile.in:558:	install-html-am install-info install-info-am install-man \
+./memacs/Makefile:921:html: html-am
+./memacs/Makefile:923:html-am:
+./memacs/Makefile:937:install-html: install-html-am
+./memacs/Makefile:939:install-html-am:
+./memacs/Makefile:983:	distclean-tags distdir dvi dvi-am html html-am info info-am \
+./memacs/Makefile:986:	install-exec-am install-html install-html-am install-info \
+./memacs/Makefile.in:921:html: html-am
+./memacs/Makefile.in:923:html-am:
+./memacs/Makefile.in:937:install-html: install-html-am
+./memacs/Makefile.in:939:install-html-am:
+./memacs/Makefile.in:983:	distclean-tags distdir dvi dvi-am html html-am info info-am \
+./memacs/Makefile.in:986:	install-exec-am install-html install-html-am install-info \
+./sparse/Makefile:498:html: html-am
+./sparse/Makefile:500:html-am:
+./sparse/Makefile:514:install-html: install-html-am
+./sparse/Makefile:516:install-html-am:
+./sparse/Makefile:556:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./sparse/Makefile:559:	install-html-am install-info install-info-am install-man \
+./sparse/Makefile.in:498:html: html-am
+./sparse/Makefile.in:500:html-am:
+./sparse/Makefile.in:514:install-html: install-html-am
+./sparse/Makefile.in:516:install-html-am:
+./sparse/Makefile.in:556:	distclean-libtool distdir dvi dvi-am html html-am info info-am \
+./sparse/Makefile.in:559:	install-html-am install-info install-info-am install-man \
+./Makefile.in:136:	ctags-recursive dvi-recursive html-recursive info-recursive \
+./Makefile.in:138:	install-exec-recursive install-html-recursive \
+./Makefile.in:716:html: html-recursive
+./Makefile.in:718:html-am:
+./Makefile.in:733:install-html: install-html-recursive
+./Makefile.in:735:install-html-am:
+./Makefile.in:778:	html-am info info-am install install-am install-data \
+./Makefile.in:780:	install-exec-am install-exec-hook install-html install-html-am \
+./nrnoc/fadvance.c:580:		assert(_nt->tml->index == CAP);
+./nrnoc/fadvance.c:581:		nrn_capacity_current(_nt, _nt->tml->ml);
+./nrnoc/fadvance.c:695:	for (tml = _nt->tml; tml; tml = tml->next) if (memb_func[tml->index].state) {
+./nrnoc/fadvance.c:696:		Pvmi s = memb_func[tml->index].state;
+./nrnoc/fadvance.c:698:		(*s)(_nt, tml->ml, tml->index);
+./nrnoc/fadvance.c:699:		if (measure) { nrn_mech_wtime_[tml->index] += nrnmpi_wtime() - w; }
+./nrnoc/fadvance.c:825:		for (tml = nt->tml; tml; tml = tml->next) {
+./nrnoc/fadvance.c:826:			Pvmi s = memb_func[tml->index].initialize;
+./nrnoc/fadvance.c:828:				(*s)(nt, tml->ml, tml->index);
+./nrnoc/fadvance.c:1017:		for (i=0; i < ml->nodecount; ++i) {
+./nrnoc/fadvance.c:1018:			(*f)(ml->nodelist[i], ml->data[i], ml->pdata[i], ml->_thread, nt);
+./nrnoc/intfire2.c:433:    _ni = _ml->_nodeindices;
+./nrnoc/intfire2.c:435:_cntml = _ml->_nodecount;
+./nrnoc/intfire2.c:436:_thread = _ml->_thread;
+./nrnoc/intfire2.c:438: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/intfire2.c:452:    _ni = _ml->_nodeindices;
+./nrnoc/intfire2.c:454:_cntml = _ml->_nodecount;
+./nrnoc/intfire2.c:455:_thread = _ml->_thread;
+./nrnoc/intfire2.c:457: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/intfire2.c:458: _nd = _ml->_nodelist[_iml];
+./nrnoc/xmech.c:176:    _ni = _ml->_nodeindices;
+./nrnoc/xmech.c:178:_cntml = _ml->_nodecount;
+./nrnoc/xmech.c:179:_thread = _ml->_thread;
+./nrnoc/xmech.c:181: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/xmech.c:188:    _nd = _ml->_nodelist[_iml];
+./nrnoc/xmech.c:204:    _ni = _ml->_nodeindices;
+./nrnoc/xmech.c:206:_cntml = _ml->_nodecount;
+./nrnoc/xmech.c:207:_thread = _ml->_thread;
+./nrnoc/xmech.c:209: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/xmech.c:210: _nd = _ml->_nodelist[_iml];
+./nrnoc/xmech.c:217:    _nd = _ml->_nodelist[_iml];
+./nrnoc/syn.c:266:    _ni = _ml->_nodeindices;
+./nrnoc/syn.c:268:_cntml = _ml->_nodecount;
+./nrnoc/syn.c:269:_thread = _ml->_thread;
+./nrnoc/syn.c:271: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/syn.c:278:    _nd = _ml->_nodelist[_iml];
+./nrnoc/syn.c:302:    _ni = _ml->_nodeindices;
+./nrnoc/syn.c:304:_cntml = _ml->_nodecount;
+./nrnoc/syn.c:305:_thread = _ml->_thread;
+./nrnoc/syn.c:307: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/syn.c:314:    _nd = _ml->_nodelist[_iml];
+./nrnoc/syn.c:340:    _ni = _ml->_nodeindices;
+./nrnoc/syn.c:342:_cntml = _ml->_nodecount;
+./nrnoc/syn.c:343:_thread = _ml->_thread;
+./nrnoc/syn.c:345: _p = _ml->_data[_iml];
+./nrnoc/syn.c:352:     _nd = _ml->_nodelist[_iml];
+./nrnoc/expsyn.c:289:  _cntml = _ml->_nodecount;
+./nrnoc/expsyn.c:290:  _thread = _ml->_thread;
+./nrnoc/expsyn.c:292:    _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/expsyn.c:293:    _nd = _ml->_nodelist[_iml];
+./nrnoc/expsyn.c:315:  _cntml = _ml->_nodecount;
+./nrnoc/expsyn.c:316:  _thread = _ml->_thread;
+./nrnoc/expsyn.c:318:    _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/expsyn.c:319:    _nd = _ml->_nodelist[_iml];
+./nrnoc/expsyn.c:338:    _ni = _ml->_nodeindices;
+./nrnoc/expsyn.c:340:_cntml = _ml->_nodecount;
+./nrnoc/expsyn.c:341:_thread = _ml->_thread;
+./nrnoc/expsyn.c:343: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/expsyn.c:351:    _nd = _ml->_nodelist[_iml];
+./nrnoc/expsyn.c:371:    _ni = _ml->_nodeindices;
+./nrnoc/expsyn.c:373:_cntml = _ml->_nodecount;
+./nrnoc/expsyn.c:374:_thread = _ml->_thread;
+./nrnoc/expsyn.c:376: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/expsyn.c:383:    _nd = _ml->_nodelist[_iml];
+./nrnoc/expsyn.c:409:    _ni = _ml->_nodeindices;
+./nrnoc/expsyn.c:411:_cntml = _ml->_nodecount;
+./nrnoc/expsyn.c:412:_thread = _ml->_thread;
+./nrnoc/expsyn.c:414: _p = _ml->_data[_iml];
+./nrnoc/expsyn.c:421:     _nd = _ml->_nodelist[_iml];
+./nrnoc/expsyn.c:433:    _ni = _ml->_nodeindices;
+./nrnoc/expsyn.c:435:_cntml = _ml->_nodecount;
+./nrnoc/expsyn.c:436:_thread = _ml->_thread;
+./nrnoc/expsyn.c:438: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/expsyn.c:439: _nd = _ml->_nodelist[_iml];
+./nrnoc/expsyn.c:446:    _nd = _ml->_nodelist[_iml];
+./nrnoc/intfire1.c:296:    _ni = _ml->_nodeindices;
+./nrnoc/intfire1.c:298:_cntml = _ml->_nodecount;
+./nrnoc/intfire1.c:299:_thread = _ml->_thread;
+./nrnoc/intfire1.c:301: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/intfire1.c:315:    _ni = _ml->_nodeindices;
+./nrnoc/intfire1.c:317:_cntml = _ml->_nodecount;
+./nrnoc/intfire1.c:318:_thread = _ml->_thread;
+./nrnoc/intfire1.c:320: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/intfire1.c:321: _nd = _ml->_nodelist[_iml];
+./nrnoc/feature.c:275:    _ni = _ml->_nodeindices;
+./nrnoc/feature.c:277:_cntml = _ml->_nodecount;
+./nrnoc/feature.c:279: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/feature.c:286:    _nd = _ml->_nodelist[_iml];
+./nrnoc/feature.c:300:    _ni = _ml->_nodeindices;
+./nrnoc/feature.c:302:_cntml = _ml->_nodecount;
+./nrnoc/feature.c:304: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/feature.c:305: _nd = _ml->_nodelist[_iml];
+./nrnoc/feature.c:312:    _nd = _ml->_nodelist[_iml];
+./nrnoc/treeset.c:388:	for (tml = _nt->tml; tml; tml = tml->next) if (memb_func[tml->index].current) {
+./nrnoc/treeset.c:389:		Pvmi s = memb_func[tml->index].current;
+./nrnoc/treeset.c:391:		(*s)(_nt, tml->ml, tml->index);
+./nrnoc/treeset.c:392:		if (measure) { nrn_mech_wtime_[tml->index] += nrnmpi_wtime() - w; }
+./nrnoc/treeset.c:394:			if (nrn_errno_check(tml->index)) {
+./nrnoc/treeset.c:505:	for (tml = _nt->tml; tml; tml = tml->next) if (memb_func[tml->index].jacob) {
+./nrnoc/treeset.c:506:		Pvmi s = memb_func[tml->index].jacob;
+./nrnoc/treeset.c:507:		(*s)(_nt, tml->ml, tml->index);
+./nrnoc/treeset.c:509:			if (nrn_errno_check(tml->index)) {
+./nrnoc/treeset.c:519:		assert(_nt->tml->index == CAP);
+./nrnoc/treeset.c:520:		nrn_cap_jacob(_nt, _nt->tml->ml);
+./nrnoc/hh.c:377:  _cntml = _ml->_nodecount;
+./nrnoc/hh.c:378:  _thread = _ml->_thread;
+./nrnoc/hh.c:380:    _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/hh.c:381:    _nd = _ml->_nodelist[_iml];
+./nrnoc/hh.c:405:  _cntml = _ml->_nodecount;
+./nrnoc/hh.c:406:  _thread = _ml->_thread;
+./nrnoc/hh.c:408:    _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/hh.c:409:    _nd = _ml->_nodelist[_iml];
+./nrnoc/hh.c:444:    _ni = _ml->_nodeindices;
+./nrnoc/hh.c:446:_cntml = _ml->_nodecount;
+./nrnoc/hh.c:447:_thread = _ml->_thread;
+./nrnoc/hh.c:449: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/hh.c:456:    _nd = _ml->_nodelist[_iml];
+./nrnoc/hh.c:484:    _ni = _ml->_nodeindices;
+./nrnoc/hh.c:486:_cntml = _ml->_nodecount;
+./nrnoc/hh.c:487:_thread = _ml->_thread;
+./nrnoc/hh.c:489: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/hh.c:496:    _nd = _ml->_nodelist[_iml];
+./nrnoc/hh.c:530:    _ni = _ml->_nodeindices;
+./nrnoc/hh.c:532:_cntml = _ml->_nodecount;
+./nrnoc/hh.c:533:_thread = _ml->_thread;
+./nrnoc/hh.c:535: _p = _ml->_data[_iml];
+./nrnoc/hh.c:542:     _nd = _ml->_nodelist[_iml];
+./nrnoc/hh.c:554:    _ni = _ml->_nodeindices;
+./nrnoc/hh.c:556:_cntml = _ml->_nodecount;
+./nrnoc/hh.c:557:_thread = _ml->_thread;
+./nrnoc/hh.c:559: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/hh.c:560: _nd = _ml->_nodelist[_iml];
+./nrnoc/hh.c:567:    _nd = _ml->_nodelist[_iml];
+./nrnoc/pattern.c:395:    _ni = _ml->_nodeindices;
+./nrnoc/pattern.c:397:_cntml = _ml->_nodecount;
+./nrnoc/pattern.c:399: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/pattern.c:411:    _ni = _ml->_nodeindices;
+./nrnoc/pattern.c:413:_cntml = _ml->_nodecount;
+./nrnoc/pattern.c:415: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/pattern.c:416: _nd = _ml->_nodelist[_iml];
+./nrnoc/passive0.c:28:	int count = ml->nodecount;
+./nrnoc/passive0.c:29:	Node **vnode = ml->nodelist;
+./nrnoc/passive0.c:30:	double **vdata = ml->data;
+./nrnoc/passive0.c:31:	Datum **vpdata = ml->pdata;
+./nrnoc/passive0.c:42:	int count = ml->nodecount;
+./nrnoc/passive0.c:43:	Node **vnode = ml->nodelist;
+./nrnoc/passive0.c:44:	double **vdata = ml->data;
+./nrnoc/passive0.c:45:	Datum **vpdata = ml->pdata;
+./nrnoc/exp2syn.c:315:  _cntml = _ml->_nodecount;
+./nrnoc/exp2syn.c:316:  _thread = _ml->_thread;
+./nrnoc/exp2syn.c:318:    _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/exp2syn.c:319:    _nd = _ml->_nodelist[_iml];
+./nrnoc/exp2syn.c:341:  _cntml = _ml->_nodecount;
+./nrnoc/exp2syn.c:342:  _thread = _ml->_thread;
+./nrnoc/exp2syn.c:344:    _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/exp2syn.c:345:    _nd = _ml->_nodelist[_iml];
+./nrnoc/exp2syn.c:376:    _ni = _ml->_nodeindices;
+./nrnoc/exp2syn.c:378:_cntml = _ml->_nodecount;
+./nrnoc/exp2syn.c:379:_thread = _ml->_thread;
+./nrnoc/exp2syn.c:381: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/exp2syn.c:389:    _nd = _ml->_nodelist[_iml];
+./nrnoc/exp2syn.c:410:    _ni = _ml->_nodeindices;
+./nrnoc/exp2syn.c:412:_cntml = _ml->_nodecount;
+./nrnoc/exp2syn.c:413:_thread = _ml->_thread;
+./nrnoc/exp2syn.c:415: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/exp2syn.c:422:    _nd = _ml->_nodelist[_iml];
+./nrnoc/exp2syn.c:448:    _ni = _ml->_nodeindices;
+./nrnoc/exp2syn.c:450:_cntml = _ml->_nodecount;
+./nrnoc/exp2syn.c:451:_thread = _ml->_thread;
+./nrnoc/exp2syn.c:453: _p = _ml->_data[_iml];
+./nrnoc/exp2syn.c:460:     _nd = _ml->_nodelist[_iml];
+./nrnoc/exp2syn.c:472:    _ni = _ml->_nodeindices;
+./nrnoc/exp2syn.c:474:_cntml = _ml->_nodecount;
+./nrnoc/exp2syn.c:475:_thread = _ml->_thread;
+./nrnoc/exp2syn.c:477: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/exp2syn.c:478: _nd = _ml->_nodelist[_iml];
+./nrnoc/exp2syn.c:485:    _nd = _ml->_nodelist[_iml];
+Binary file ./nrnoc/.libs/treeset.o matches
+Binary file ./nrnoc/.libs/libnrnoc.so.0.0.0 matches
+Binary file ./nrnoc/.libs/fadvance.o matches
+./nrnoc/passive.c:191:    _ni = _ml->_nodeindices;
+./nrnoc/passive.c:193:_cntml = _ml->_nodecount;
+./nrnoc/passive.c:194:_thread = _ml->_thread;
+./nrnoc/passive.c:196: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/passive.c:203:    _nd = _ml->_nodelist[_iml];
+./nrnoc/passive.c:223:    _ni = _ml->_nodeindices;
+./nrnoc/passive.c:225:_cntml = _ml->_nodecount;
+./nrnoc/passive.c:226:_thread = _ml->_thread;
+./nrnoc/passive.c:228: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/passive.c:235:    _nd = _ml->_nodelist[_iml];
+./nrnoc/passive.c:259:    _ni = _ml->_nodeindices;
+./nrnoc/passive.c:261:_cntml = _ml->_nodecount;
+./nrnoc/passive.c:262:_thread = _ml->_thread;
+./nrnoc/passive.c:264: _p = _ml->_data[_iml];
+./nrnoc/passive.c:271:     _nd = _ml->_nodelist[_iml];
+./nrnoc/netstim.c:619:    _ni = _ml->_nodeindices;
+./nrnoc/netstim.c:621:_cntml = _ml->_nodecount;
+./nrnoc/netstim.c:622:_thread = _ml->_thread;
+./nrnoc/netstim.c:624: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/netstim.c:638:    _ni = _ml->_nodeindices;
+./nrnoc/netstim.c:640:_cntml = _ml->_nodecount;
+./nrnoc/netstim.c:641:_thread = _ml->_thread;
+./nrnoc/netstim.c:643: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/netstim.c:644: _nd = _ml->_nodelist[_iml];
+./nrnoc/eion.c:520:	int count = ml->nodecount;
+./nrnoc/eion.c:521:	Node** vnode = ml->nodelist;
+./nrnoc/eion.c:522:	double **pd = ml->data;
+./nrnoc/eion.c:523:	Datum **ppd = ml->pdata;
+./nrnoc/eion.c:542:	int count = ml->nodecount;
+./nrnoc/eion.c:543:	Node** vnode = ml->nodelist;
+./nrnoc/eion.c:544:	double **pd = ml->data;
+./nrnoc/eion.c:545:	Datum **ppd = ml->pdata;
+./nrnoc/eion.c:609:	for (tml = nt->tml; tml; tml = tml->next) if (memb_func[tml->index].alloc == ion_alloc) {
+./nrnoc/eion.c:610:		ml = tml->ml;
+./nrnoc/eion.c:611:		i2 = ml->nodecount;
+./nrnoc/eion.c:613:			ml->data[i][c] += ml->data[i][dc]
+./nrnoc/eion.c:614:			   * ( NODERHS(ml->nodelist[i]) )
+./nrnoc/svclmp.c:331:    _ni = _ml->_nodeindices;
+./nrnoc/svclmp.c:333:_cntml = _ml->_nodecount;
+./nrnoc/svclmp.c:334:_thread = _ml->_thread;
+./nrnoc/svclmp.c:336: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/svclmp.c:338: _nd = _ml->_nodelist[_iml];
+./nrnoc/svclmp.c:350:    _nd = _ml->_nodelist[_iml];
+./nrnoc/svclmp.c:371:    _ni = _ml->_nodeindices;
+./nrnoc/svclmp.c:373:_cntml = _ml->_nodecount;
+./nrnoc/svclmp.c:374:_thread = _ml->_thread;
+./nrnoc/svclmp.c:376: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/svclmp.c:378: _nd = _ml->_nodelist[_iml];
+./nrnoc/svclmp.c:390:    _nd = _ml->_nodelist[_iml];
+./nrnoc/svclmp.c:423:    _ni = _ml->_nodeindices;
+./nrnoc/svclmp.c:425:_cntml = _ml->_nodecount;
+./nrnoc/svclmp.c:426:_thread = _ml->_thread;
+./nrnoc/svclmp.c:428: _p = _ml->_data[_iml];
+./nrnoc/svclmp.c:429: _nd = _ml->_nodelist[_iml];
+./nrnoc/svclmp.c:453:    _ni = _ml->_nodeindices;
+./nrnoc/svclmp.c:455:_cntml = _ml->_nodecount;
+./nrnoc/svclmp.c:456:_thread = _ml->_thread;
+./nrnoc/svclmp.c:458: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/svclmp.c:459: _nd = _ml->_nodelist[_iml];
+./nrnoc/svclmp.c:461: _nd = _ml->_nodelist[_iml];
+./nrnoc/svclmp.c:473:    _nd = _ml->_nodelist[_iml];
+./nrnoc/stim.c:236:    _ni = _ml->_nodeindices;
+./nrnoc/stim.c:238:_cntml = _ml->_nodecount;
+./nrnoc/stim.c:239:_thread = _ml->_thread;
+./nrnoc/stim.c:241: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/stim.c:243: _nd = _ml->_nodelist[_iml];
+./nrnoc/stim.c:255:    _nd = _ml->_nodelist[_iml];
+./nrnoc/stim.c:283:    _ni = _ml->_nodeindices;
+./nrnoc/stim.c:285:_cntml = _ml->_nodecount;
+./nrnoc/stim.c:286:_thread = _ml->_thread;
+./nrnoc/stim.c:288: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/stim.c:290: _nd = _ml->_nodelist[_iml];
+./nrnoc/stim.c:302:    _nd = _ml->_nodelist[_iml];
+./nrnoc/stim.c:335:    _ni = _ml->_nodeindices;
+./nrnoc/stim.c:337:_cntml = _ml->_nodecount;
+./nrnoc/stim.c:338:_thread = _ml->_thread;
+./nrnoc/stim.c:340: _p = _ml->_data[_iml];
+./nrnoc/stim.c:341: _nd = _ml->_nodelist[_iml];
+./nrnoc/Makefile:923:html: html-am
+./nrnoc/Makefile:925:html-am:
+./nrnoc/Makefile:939:install-html: install-html-am
+./nrnoc/Makefile:941:install-html-am:
+./nrnoc/Makefile:987:	html-am info info-am install install-am install-binPROGRAMS \
+./nrnoc/Makefile:989:	install-exec install-exec-am install-html install-html-am \
+./nrnoc/capac.c:33:	int count = ml->nodecount;
+./nrnoc/capac.c:34:	Node **vnode = ml->nodelist;
+./nrnoc/capac.c:35:	double **vdata = ml->data;
+./nrnoc/capac.c:40:		int* ni = ml->nodeindices;
+./nrnoc/capac.c:54:	int count = ml->nodecount;
+./nrnoc/capac.c:55:	double **vdata = ml->data;
+./nrnoc/capac.c:63:	int count = ml->nodecount;
+./nrnoc/capac.c:64:	Node **vnode = ml->nodelist;
+./nrnoc/capac.c:65:	double **vdata = ml->data;
+./nrnoc/capac.c:73:		int* ni = ml->nodeindices;
+./nrnoc/capac.c:88:	int count = ml->nodecount;
+./nrnoc/capac.c:89:	Node **vnode = ml->nodelist;
+./nrnoc/capac.c:90:	double **vdata = ml->data;
+./nrnoc/capac.c:95:		int* ni = ml->nodeindices;
+./nrnoc/capac.c:109:	int count = ml->nodecount;
+./nrnoc/capac.c:110:	Node **vnode = ml->nodelist;
+./nrnoc/capac.c:111:	double **vdata = ml->data;
+./nrnoc/capac.c:115:		int* ni = ml->nodeindices;
+./nrnoc/extcelln.c:98:	cnt = ml->nodecount;
+./nrnoc/extcelln.c:99:	ndlist = ml->nodelist;
+./nrnoc/extcelln.c:112:		pd = ml->data[i];
+./nrnoc/extcelln.c:177:	int ndcount = ml->nodecount;
+./nrnoc/extcelln.c:178:	Node** ndlist = ml->nodelist;
+./nrnoc/extcelln.c:179:	double** data = ml->data;
+./nrnoc/extcelln.c:224:			int cnt = ml->nodecount;
+./nrnoc/extcelln.c:225:			Node **ndlist = ml->nodelist;
+./nrnoc/extcelln.c:229:				nd->extnode->param = ml->data[i];
+./nrnoc/extcelln.c:260:	cnt = ml->nodecount;
+./nrnoc/extcelln.c:261:	ndlist = ml->nodelist;
+./nrnoc/extcelln.c:270:		pd = ml->data[i];
+./nrnoc/extcelln.c:340:	cnt = ml->nodecount;
+./nrnoc/extcelln.c:341:	ndlist = ml->nodelist;
+./nrnoc/extcelln.c:358:		pd = ml->data[i];
+./nrnoc/vclmp.c:415:    _ni = _ml->_nodeindices;
+./nrnoc/vclmp.c:417:_cntml = _ml->_nodecount;
+./nrnoc/vclmp.c:419: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/vclmp.c:421: _nd = _ml->_nodelist[_iml];
+./nrnoc/vclmp.c:433:    _nd = _ml->_nodelist[_iml];
+./nrnoc/vclmp.c:453:    _ni = _ml->_nodeindices;
+./nrnoc/vclmp.c:455:_cntml = _ml->_nodecount;
+./nrnoc/vclmp.c:457: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/vclmp.c:459: _nd = _ml->_nodelist[_iml];
+./nrnoc/vclmp.c:471:    _nd = _ml->_nodelist[_iml];
+./nrnoc/vclmp.c:501:    _ni = _ml->_nodeindices;
+./nrnoc/vclmp.c:503:_cntml = _ml->_nodecount;
+./nrnoc/vclmp.c:505: _p = _ml->_data[_iml];
+./nrnoc/vclmp.c:506: _nd = _ml->_nodelist[_iml];
+./nrnoc/vclmp.c:527:    _ni = _ml->_nodeindices;
+./nrnoc/vclmp.c:529:_cntml = _ml->_nodecount;
+./nrnoc/vclmp.c:531: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/vclmp.c:532: _nd = _ml->_nodelist[_iml];
+./nrnoc/vclmp.c:534: _nd = _ml->_nodelist[_iml];
+./nrnoc/vclmp.c:546:    _nd = _ml->_nodelist[_iml];
+./nrnoc/intfire4.c:687:    _ni = _ml->_nodeindices;
+./nrnoc/intfire4.c:689:_cntml = _ml->_nodecount;
+./nrnoc/intfire4.c:690:_thread = _ml->_thread;
+./nrnoc/intfire4.c:692: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/intfire4.c:706:    _ni = _ml->_nodeindices;
+./nrnoc/intfire4.c:708:_cntml = _ml->_nodecount;
+./nrnoc/intfire4.c:709:_thread = _ml->_thread;
+./nrnoc/intfire4.c:711: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/intfire4.c:712: _nd = _ml->_nodelist[_iml];
+./nrnoc/ppmark.c:214:    _ni = _ml->_nodeindices;
+./nrnoc/ppmark.c:216:_cntml = _ml->_nodecount;
+./nrnoc/ppmark.c:217:_thread = _ml->_thread;
+./nrnoc/ppmark.c:219: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/ppmark.c:226:    _nd = _ml->_nodelist[_iml];
+./nrnoc/ppmark.c:242:    _ni = _ml->_nodeindices;
+./nrnoc/ppmark.c:244:_cntml = _ml->_nodecount;
+./nrnoc/ppmark.c:245:_thread = _ml->_thread;
+./nrnoc/ppmark.c:247: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/ppmark.c:248: _nd = _ml->_nodelist[_iml];
+./nrnoc/ppmark.c:255:    _nd = _ml->_nodelist[_iml];
+./nrnoc/Makefile.in:923:html: html-am
+./nrnoc/Makefile.in:925:html-am:
+./nrnoc/Makefile.in:939:install-html: install-html-am
+./nrnoc/Makefile.in:941:install-html-am:
+./nrnoc/Makefile.in:987:	html-am info info-am install install-am install-binPROGRAMS \
+./nrnoc/Makefile.in:989:	install-exec install-exec-am install-html install-html-am \
+./nrnoc/apcount.c:315:    _ni = _ml->_nodeindices;
+./nrnoc/apcount.c:317:_cntml = _ml->_nodecount;
+./nrnoc/apcount.c:318:_thread = _ml->_thread;
+./nrnoc/apcount.c:320: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/apcount.c:327:    _nd = _ml->_nodelist[_iml];
+./nrnoc/apcount.c:343:    _ni = _ml->_nodeindices;
+./nrnoc/apcount.c:345:_cntml = _ml->_nodecount;
+./nrnoc/apcount.c:346:_thread = _ml->_thread;
+./nrnoc/apcount.c:348: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/apcount.c:355:    _nd = _ml->_nodelist[_iml];
+./nrnoc/apcount.c:367:    _ni = _ml->_nodeindices;
+./nrnoc/apcount.c:369:_cntml = _ml->_nodecount;
+./nrnoc/apcount.c:370:_thread = _ml->_thread;
+./nrnoc/apcount.c:372: _p = _ml->_data[_iml];
+./nrnoc/apcount.c:379:     _nd = _ml->_nodelist[_iml];
+./nrnoc/apcount.c:391:    _ni = _ml->_nodeindices;
+./nrnoc/apcount.c:393:_cntml = _ml->_nodecount;
+./nrnoc/apcount.c:394:_thread = _ml->_thread;
+./nrnoc/apcount.c:396: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/apcount.c:397: _nd = _ml->_nodelist[_iml];
+./nrnoc/apcount.c:404:    _nd = _ml->_nodelist[_iml];
+./nrnoc/multicore.c:631:			Memb_list* ml = tml->ml;
+./nrnoc/multicore.c:632:			tml2 = tml->next;
+./nrnoc/multicore.c:633:			free((char*)ml->nodelist);
+./nrnoc/multicore.c:634:			free((char*)ml->nodeindices);
+./nrnoc/multicore.c:635:			if (memb_func[tml->index].hoc_mech) {
+./nrnoc/multicore.c:636:				free((char*)ml->prop);
+./nrnoc/multicore.c:638:				free((char*)ml->data);
+./nrnoc/multicore.c:639:				free((char*)ml->pdata);
+./nrnoc/multicore.c:641:			if (ml->_thread) {
+./nrnoc/multicore.c:642:				if (memb_func[tml->index].thread_cleanup_) {
+./nrnoc/multicore.c:643:	(*memb_func[tml->index].thread_cleanup_)(ml->_thread);
+./nrnoc/multicore.c:645:				free((char*)ml->_thread);
+./nrnoc/multicore.c:732:			tml->index = i;
+./nrnoc/multicore.c:733:			tml->next = (NrnThreadMembList*)0;
+./nrnoc/multicore.c:735:			ptml = &tml->next;
+./nrnoc/multicore.c:736:			CACHELINE_ALLOC(tml->ml, Memb_list, 1);
+./nrnoc/multicore.c:737:			if (i == EXTRACELL) { _nt->_ecell_memb_list = tml->ml; }
+./nrnoc/multicore.c:738:			mlmap[i] = tml->ml;
+./nrnoc/multicore.c:739:			CACHELINE_ALLOC(tml->ml->nodelist, Node*, mlcnt[i]);
+./nrnoc/multicore.c:740:			CACHELINE_ALLOC(tml->ml->nodeindices, int, mlcnt[i]);
+./nrnoc/multicore.c:742:				tml->ml->prop = (Prop**)emalloc(mlcnt[i]*sizeof(Prop*));
+./nrnoc/multicore.c:744:				CACHELINE_ALLOC(tml->ml->data, double*, mlcnt[i]);
+./nrnoc/multicore.c:745:				CACHELINE_ALLOC(tml->ml->pdata, Datum*, mlcnt[i]);
+./nrnoc/multicore.c:747:			tml->ml->_thread = (Datum*)0;
+./nrnoc/multicore.c:749:				tml->ml->_thread = (Datum*)ecalloc(memb_func[i].thread_size_, sizeof(Datum));
+./nrnoc/multicore.c:750:				if (memb_func[tml->index].thread_mem_init_) {
+./nrnoc/multicore.c:751:	(*memb_func[tml->index].thread_mem_init_)(tml->ml->_thread);
+./nrnoc/multicore.c:754:			tml->ml->nodecount = 0; /* counted again below */
+./nrnoc/multicore.c:758:	for (tml = _nt->tml; tml; tml = tml->next) {
+./nrnoc/multicore.c:759:		_nt->_ml_list[tml->index] = tml->ml;
+./nrnoc/multicore.c:771:				ml->nodelist[ml->nodecount] = nd;
+./nrnoc/multicore.c:772:				ml->nodeindices[ml->nodecount] = nd->v_node_index;
+./nrnoc/multicore.c:774:					ml->prop[ml->nodecount] = p;
+./nrnoc/multicore.c:776:					ml->data[ml->nodecount] = p->param;
+./nrnoc/multicore.c:777:					ml->pdata[ml->nodecount] = p->dparam;
+./nrnoc/multicore.c:779:				++ml->nodecount;
+./nrnoc/multicore.c:816:	for (tml = _nt->tml; tml; tml = tml->next) {
+./nrnoc/multicore.c:817:		assert(mlcnt[tml->index] == tml->ml->nodecount);
+./nrnoc/multicore.c:833:		for (tml = _nt->tml; tml; tml = tml->next) {
+./nrnoc/multicore.c:834:			if (bamap[tml->index]) {
+./nrnoc/multicore.c:835:				Memb_list* ml = tml->ml;
+./nrnoc/multicore.c:838:				tbl->bam = bamap[tml->index];
+./nrnoc/multicore.c:847:	for (tml = _nt->tml; tml; tml = tml->next) if (memb_func[tml->index].is_point) {
+./nrnoc/multicore.c:848:		for (i=0; i < tml->ml->nodecount; ++i) {
+./nrnoc/multicore.c:849:			Point_process* pnt = (Point_process*)tml->ml->pdata[i][1]._pvoid;
+./nrnoc/multicore.c:1155:		for (tml = nt->tml; tml; tml = tml->next) {
+./nrnoc/multicore.c:1156:			index = tml->index;
+./nrnoc/multicore.c:1170:		for (tml = nt->tml; tml; tml = tml->next) {
+./nrnoc/multicore.c:1171:			index = tml->index;
+./nrnoc/multicore.c:1186:		Memb_list* ml = tml->ml;
+./nrnoc/multicore.c:1187:		(*memb_func[tml->index].thread_table_check_)(
+./nrnoc/multicore.c:1188:			ml->data[0], ml->pdata[0], ml->_thread, nt, tml->index
+./nrnoc/ldifus.c:154:	n = ml->nodecount;
+./nrnoc/ldifus.c:161:			pld->state[i] = ml->pdata[mi][-sindex - 1].pval;
+./nrnoc/ldifus.c:163:			pld->state[i] = ml->data[mi] + sindex;
+./nrnoc/ldifus.c:165:		nd = ml->nodelist[mi];
+./nrnoc/ldifus.c:169:			pnd = ml->nodelist[mpi];
+./nrnoc/ldifus.c:196:	n = ml->nodecount;
+./nrnoc/ldifus.c:218:		map[ml->nodelist[i]->v_node_index] = i;
+./nrnoc/ldifus.c:267:	pld->mindex[i], secname(ml->nodelist[pld->mindex[i]]->sec),
+./nrnoc/ldifus.c:268:	ml->nodelist[pld->mindex[i]]->sec_node_index_
+./nrnoc/ldifus.c:305:		for (tml = nrn_threads[i].tml; tml; tml = tml->next) {
+./nrnoc/ldifus.c:306:			if (tml->index == m) {
+./nrnoc/ldifus.c:307:				ldtd->ml[i] = tml->ml;
+./nrnoc/ldifus.c:308:				longdifusalloc(ldtd->ldifus + i, m, sindex, tml->ml, nrn_threads + i);
+./nrnoc/ldifus.c:341:	n = ml->nodecount;
+./nrnoc/ldifus.c:342:	data = ml->data;
+./nrnoc/ldifus.c:343:	pdata = ml->pdata;
+./nrnoc/ldifus.c:344:	thread = ml->_thread;
+./nrnoc/ldifus.c:413:	n = ml->nodecount;
+./nrnoc/ldifus.c:414:	data = ml->data;
+./nrnoc/ldifus.c:415:	pdata = ml->pdata;
+./nrnoc/ldifus.c:416:	thread = ml->_thread;
+./nrnoc/ldifus.c:471:	n = ml->nodecount;
+./nrnoc/ldifus.c:472:	data = ml->data;
+./nrnoc/ldifus.c:473:	pdata = ml->pdata;
+./nrnoc/ldifus.c:474:	thread = ml->_thread;
+./nrnoc/oclmp.c:304:    _ni = _ml->_nodeindices;
+./nrnoc/oclmp.c:306:_cntml = _ml->_nodecount;
+./nrnoc/oclmp.c:307:_thread = _ml->_thread;
+./nrnoc/oclmp.c:309: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/oclmp.c:311: _nd = _ml->_nodelist[_iml];
+./nrnoc/oclmp.c:323:    _nd = _ml->_nodelist[_iml];
+./nrnoc/oclmp.c:344:    _ni = _ml->_nodeindices;
+./nrnoc/oclmp.c:346:_cntml = _ml->_nodecount;
+./nrnoc/oclmp.c:347:_thread = _ml->_thread;
+./nrnoc/oclmp.c:349: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/oclmp.c:351: _nd = _ml->_nodelist[_iml];
+./nrnoc/oclmp.c:363:    _nd = _ml->_nodelist[_iml];
+./nrnoc/oclmp.c:396:    _ni = _ml->_nodeindices;
+./nrnoc/oclmp.c:398:_cntml = _ml->_nodecount;
+./nrnoc/oclmp.c:399:_thread = _ml->_thread;
+./nrnoc/oclmp.c:401: _p = _ml->_data[_iml];
+./nrnoc/oclmp.c:402: _nd = _ml->_nodelist[_iml];
+./nrnoc/oclmp.c:426:    _ni = _ml->_nodeindices;
+./nrnoc/oclmp.c:428:_cntml = _ml->_nodecount;
+./nrnoc/oclmp.c:429:_thread = _ml->_thread;
+./nrnoc/oclmp.c:431: _p = _ml->_data[_iml]; _ppvar = _ml->_pdata[_iml];
+./nrnoc/oclmp.c:432: _nd = _ml->_nodelist[_iml];
+./nrnoc/oclmp.c:434: _nd = _ml->_nodelist[_iml];
+./nrnoc/oclmp.c:446:    _nd = _ml->_nodelist[_iml];
+./sundials/shared/Makefile:677:html: html-am
+./sundials/shared/Makefile:679:html-am:
+./sundials/shared/Makefile:693:install-html: install-html-am
+./sundials/shared/Makefile:695:install-html-am:
+./sundials/shared/Makefile:739:	html-am info info-am install install-am install-data \
+./sundials/shared/Makefile:741:	install-exec-am install-html install-html-am install-info \
+./sundials/shared/Makefile.in:677:html: html-am
+./sundials/shared/Makefile.in:679:html-am:
+./sundials/shared/Makefile.in:693:install-html: install-html-am
+./sundials/shared/Makefile.in:695:install-html-am:
+./sundials/shared/Makefile.in:739:	html-am info info-am install install-am install-data \
+./sundials/shared/Makefile.in:741:	install-exec-am install-html install-html-am install-info \
+./sundials/Makefile:191:	ctags-recursive dvi-recursive html-recursive info-recursive \
+./sundials/Makefile:193:	install-exec-recursive install-html-recursive \
+./sundials/Makefile:802:html: html-recursive
+./sundials/Makefile:804:html-am:
+./sundials/Makefile:818:install-html: install-html-recursive
+./sundials/Makefile:820:install-html-am:
+./sundials/Makefile:864:	html-am info info-am install install-am install-data \
+./sundials/Makefile:866:	install-exec-am install-html install-html-am install-info \
+./sundials/ida/Makefile:672:html: html-am
+./sundials/ida/Makefile:674:html-am:
+./sundials/ida/Makefile:688:install-html: install-html-am
+./sundials/ida/Makefile:690:install-html-am:
+./sundials/ida/Makefile:734:	html-am info info-am install install-am install-data \
+./sundials/ida/Makefile:736:	install-exec-am install-html install-html-am install-info \
+./sundials/ida/Makefile.in:672:html: html-am
+./sundials/ida/Makefile.in:674:html-am:
+./sundials/ida/Makefile.in:688:install-html: install-html-am
+./sundials/ida/Makefile.in:690:install-html-am:
+./sundials/ida/Makefile.in:734:	html-am info info-am install install-am install-data \
+./sundials/ida/Makefile.in:736:	install-exec-am install-html install-html-am install-info \
+./sundials/Makefile.in:191:	ctags-recursive dvi-recursive html-recursive info-recursive \
+./sundials/Makefile.in:193:	install-exec-recursive install-html-recursive \
+./sundials/Makefile.in:802:html: html-recursive
+./sundials/Makefile.in:804:html-am:
+./sundials/Makefile.in:818:install-html: install-html-recursive
+./sundials/Makefile.in:820:install-html-am:
+./sundials/Makefile.in:864:	html-am info info-am install install-am install-data \
+./sundials/Makefile.in:866:	install-exec-am install-html install-html-am install-info \
+./sundials/cvodes/Makefile:683:html: html-am
+./sundials/cvodes/Makefile:685:html-am:
+./sundials/cvodes/Makefile:699:install-html: install-html-am
+./sundials/cvodes/Makefile:701:install-html-am:
+./sundials/cvodes/Makefile:745:	html-am info info-am install install-am install-data \
+./sundials/cvodes/Makefile:747:	install-exec-am install-html install-html-am install-info \
+./sundials/cvodes/Makefile.in:683:html: html-am
+./sundials/cvodes/Makefile.in:685:html-am:
+./sundials/cvodes/Makefile.in:699:install-html: install-html-am
+./sundials/cvodes/Makefile.in:701:install-html-am:
+./sundials/cvodes/Makefile.in:745:	html-am info info-am install install-am install-data \
+./sundials/cvodes/Makefile.in:747:	install-exec-am install-html install-html-am install-info \

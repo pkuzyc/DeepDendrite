@@ -1,0 +1,162 @@
+static bbsmpibuf* (*p_nrnmpi_newbuf)(int size);
+static void (*p_nrnmpi_copy)(bbsmpibuf* dest, bbsmpibuf* src);
+static void (*p_nrnmpi_ref)(bbsmpibuf* buf);
+static void (*p_nrnmpi_unref)(bbsmpibuf* buf);
+static void (*p_nrnmpi_upkbegin)(bbsmpibuf* buf);
+static char* (*p_nrnmpi_getkey)(bbsmpibuf* buf);
+static int (*p_nrnmpi_getid)(bbsmpibuf* buf);
+static int (*p_nrnmpi_upkint)(bbsmpibuf* buf);
+static double (*p_nrnmpi_upkdouble)(bbsmpibuf* buf);
+static void (*p_nrnmpi_upkvec)(int n, double* x, bbsmpibuf* buf);
+static char* (*p_nrnmpi_upkstr)(bbsmpibuf* buf);
+static char* (*p_nrnmpi_upkpickle)(size_t* size, bbsmpibuf* buf);
+static void (*p_nrnmpi_pkbegin)(bbsmpibuf* buf);
+static void (*p_nrnmpi_enddata)(bbsmpibuf* buf);
+static void (*p_nrnmpi_pkint)(int i, bbsmpibuf* buf);
+static void (*p_nrnmpi_pkdouble)(double x, bbsmpibuf* buf);
+static void (*p_nrnmpi_pkvec)(int n, double* x, bbsmpibuf* buf);
+static void (*p_nrnmpi_pkstr)(const char* s, bbsmpibuf* buf);
+static void (*p_nrnmpi_pkpickle)(const char* s, size_t size, bbsmpibuf* buf);
+static int (*p_nrnmpi_iprobe)(int* size, int* tag, int* source);
+static void (*p_nrnmpi_probe)(int* size, int* tag, int* source);
+static void (*p_nrnmpi_bbssend)(int dest, int tag, bbsmpibuf* r);
+static int (*p_nrnmpi_bbsrecv)(int source, bbsmpibuf* r);
+static int (*p_nrnmpi_bbssendrecv)(int dest, int tag, bbsmpibuf* s, bbsmpibuf* r);
+static void (*p_nrnmpi_init)(int nrnmpi_under_nrncontrol, int* pargc, char*** pargv);
+static int (*p_nrnmpi_wrap_mpi_init)(int* flag);
+static double (*p_nrnmpi_wtime)();
+static void (*p_nrnmpi_terminate)();
+static void (*p_nrnmpi_abort)(int errcode);
+static void (*p_nrnmpi_subworld_size)(int n);
+static void (*p_nrnmpi_spike_initialize)();
+static int (*p_nrnmpi_spike_exchange)();
+static int (*p_nrnmpi_spike_exchange_compressed)();
+static double (*p_nrnmpi_mindelay)(double maxdel);
+static int (*p_nrnmpi_int_allmax)(int i);
+static void (*p_nrnmpi_int_gather)(int* s, int* r, int cnt, int root);
+static void (*p_nrnmpi_int_gatherv)(int* s, int scnt, int* r, int* rcnt, int* rdispl, int root);
+static void (*p_nrnmpi_char_gatherv)(char* s, int scnt, char* r, int* rcnt, int* rdispl, int root);
+static void (*p_nrnmpi_int_scatter)(int* s, int* r, int cnt, int root);
+static void (*p_nrnmpi_char_scatterv)(char* s, int* scnt, int* sdispl, char* r, int rcnt, int root);
+static void (*p_nrnmpi_int_allgather)(int* s, int* r, int n);
+static void (*p_nrnmpi_int_allgather_inplace)(int* srcdest, int n);
+static void (*p_nrnmpi_int_allgatherv)(int* s, int* r, int* n, int* dspl);
+static void (*p_nrnmpi_char_allgatherv)(char* s, char* r, int* n, int* dspl);
+static void (*p_nrnmpi_int_alltoall)(int* s, int* r, int n);
+static void (*p_nrnmpi_int_alltoallv)(int* s, int* scnt, int* sdispl, int* r, int* rcnt, int* rdispl);
+static void (*p_nrnmpi_long_allgatherv)(int64_t* s, int64_t* r, int* n, int* dspl);
+static void (*p_nrnmpi_long_allgatherv_inplace)(long* srcdest, int* n, int* dspl);
+static void (*p_nrnmpi_long_alltoallv)(int64_t* s, int* scnt, int* sdispl, int64_t* r, int* rcnt, int* rdispl);
+static void (*p_nrnmpi_dbl_allgatherv)(double* s, double* r, int* n, int* dspl);
+static void (*p_nrnmpi_dbl_allgatherv_inplace)(double* srcdest, int* n, int* dspl);
+static void (*p_nrnmpi_dbl_alltoallv)(double* s, int* scnt, int* sdispl, double* r, int* rcnt, int* rdispl);
+static void (*p_nrnmpi_char_alltoallv)(char* s, int* scnt, int* sdispl, char* r, int* rcnt, int* rdispl);
+static void (*p_nrnmpi_dbl_broadcast)(double* buf, int cnt, int root);
+static void (*p_nrnmpi_int_broadcast)(int* buf, int cnt, int root);
+static void (*p_nrnmpi_char_broadcast)(char* buf, int cnt, int root);
+static void (*p_nrnmpi_char_broadcast_world)(char** pstr, int root);
+static int (*p_nrnmpi_int_sum_reduce)(int in);
+static void (*p_nrnmpi_assert_opstep)(int opstep, double t);
+static double (*p_nrnmpi_dbl_allmin)(double x);
+static int (*p_nrnmpi_pgvts_least)(double* t, int* op, int* init);
+static void (*p_nrnmpi_send_doubles)(double* pd, int cnt, int dest, int tag);
+static void (*p_nrnmpi_recv_doubles)(double* pd, int cnt, int src, int tag);
+static void (*p_nrnmpi_postrecv_doubles)(double* pd, int cnt, int src, int tag, void** request);
+static void (*p_nrnmpi_wait)(void** request);
+static void (*p_nrnmpi_barrier)();
+static double (*p_nrnmpi_dbl_allreduce)(double x, int type);
+static void (*p_nrnmpi_dbl_allreduce_vec)(double* src, double* dest, int cnt, int type);
+static void (*p_nrnmpi_longdbl_allreduce_vec)(longdbl* src, longdbl* dest, int cnt, int type);
+static void (*p_nrnmpi_long_allreduce_vec)(long* src, long* dest, int cnt, int type);
+static void (*p_nrnmpi_dbl_allgather)(double* s, double* r, int n);
+#if BGPDMA
+static void (*p_nrnmpi_bgp_comm)();
+static void (*p_nrnmpi_bgp_multisend)(NRNMPI_Spike* spk, int n, int* hosts);
+static int (*p_nrnmpi_bgp_single_advance)(NRNMPI_Spike* spk);
+static int (*p_nrnmpi_bgp_conserve)(int nsend, int nrecv);
+#endif
+
+static struct {
+	char* name;
+	void** ppf;
+}ftable[] = {
+	"f_nrnmpi_newbuf", (void**)&p_nrnmpi_newbuf,
+	"f_nrnmpi_copy", (void**)&p_nrnmpi_copy,
+	"f_nrnmpi_ref", (void**)&p_nrnmpi_ref,
+	"f_nrnmpi_unref", (void**)&p_nrnmpi_unref,
+	"f_nrnmpi_upkbegin", (void**)&p_nrnmpi_upkbegin,
+	"f_nrnmpi_getkey", (void**)&p_nrnmpi_getkey,
+	"f_nrnmpi_getid", (void**)&p_nrnmpi_getid,
+	"f_nrnmpi_upkint", (void**)&p_nrnmpi_upkint,
+	"f_nrnmpi_upkdouble", (void**)&p_nrnmpi_upkdouble,
+	"f_nrnmpi_upkvec", (void**)&p_nrnmpi_upkvec,
+	"f_nrnmpi_upkstr", (void**)&p_nrnmpi_upkstr,
+	"f_nrnmpi_upkpickle", (void**)&p_nrnmpi_upkpickle,
+	"f_nrnmpi_pkbegin", (void**)&p_nrnmpi_pkbegin,
+	"f_nrnmpi_enddata", (void**)&p_nrnmpi_enddata,
+	"f_nrnmpi_pkint", (void**)&p_nrnmpi_pkint,
+	"f_nrnmpi_pkdouble", (void**)&p_nrnmpi_pkdouble,
+	"f_nrnmpi_pkvec", (void**)&p_nrnmpi_pkvec,
+	"f_nrnmpi_pkstr", (void**)&p_nrnmpi_pkstr,
+	"f_nrnmpi_pkpickle", (void**)&p_nrnmpi_pkpickle,
+	"f_nrnmpi_iprobe", (void**)&p_nrnmpi_iprobe,
+	"f_nrnmpi_probe", (void**)&p_nrnmpi_probe,
+	"f_nrnmpi_bbssend", (void**)&p_nrnmpi_bbssend,
+	"f_nrnmpi_bbsrecv", (void**)&p_nrnmpi_bbsrecv,
+	"f_nrnmpi_bbssendrecv", (void**)&p_nrnmpi_bbssendrecv,
+	"f_nrnmpi_init", (void**)&p_nrnmpi_init,
+	"f_nrnmpi_wrap_mpi_init", (void**)&p_nrnmpi_wrap_mpi_init,
+	"f_nrnmpi_wtime", (void**)&p_nrnmpi_wtime,
+	"f_nrnmpi_terminate", (void**)&p_nrnmpi_terminate,
+	"f_nrnmpi_abort", (void**)&p_nrnmpi_abort,
+	"f_nrnmpi_subworld_size", (void**)&p_nrnmpi_subworld_size,
+	"f_nrnmpi_spike_initialize", (void**)&p_nrnmpi_spike_initialize,
+	"f_nrnmpi_spike_exchange", (void**)&p_nrnmpi_spike_exchange,
+	"f_nrnmpi_spike_exchange_compressed", (void**)&p_nrnmpi_spike_exchange_compressed,
+	"f_nrnmpi_mindelay", (void**)&p_nrnmpi_mindelay,
+	"f_nrnmpi_int_allmax", (void**)&p_nrnmpi_int_allmax,
+	"f_nrnmpi_int_gather", (void**)&p_nrnmpi_int_gather,
+	"f_nrnmpi_int_gatherv", (void**)&p_nrnmpi_int_gatherv,
+	"f_nrnmpi_char_gatherv", (void**)&p_nrnmpi_char_gatherv,
+	"f_nrnmpi_int_scatter", (void**)&p_nrnmpi_int_scatter,
+	"f_nrnmpi_char_scatterv", (void**)&p_nrnmpi_char_scatterv,
+	"f_nrnmpi_int_allgather", (void**)&p_nrnmpi_int_allgather,
+	"f_nrnmpi_int_allgather_inplace", (void**)&p_nrnmpi_int_allgather_inplace,
+	"f_nrnmpi_int_allgatherv", (void**)&p_nrnmpi_int_allgatherv,
+	"f_nrnmpi_char_allgatherv", (void**)&p_nrnmpi_char_allgatherv,
+	"f_nrnmpi_int_alltoall", (void**)&p_nrnmpi_int_alltoall,
+	"f_nrnmpi_int_alltoallv", (void**)&p_nrnmpi_int_alltoallv,
+	"f_nrnmpi_long_allgatherv", (void**)&p_nrnmpi_long_allgatherv,
+	"f_nrnmpi_long_allgatherv_inplace", (void**)&p_nrnmpi_long_allgatherv_inplace,
+	"f_nrnmpi_long_alltoallv", (void**)&p_nrnmpi_long_alltoallv,
+	"f_nrnmpi_dbl_allgatherv", (void**)&p_nrnmpi_dbl_allgatherv,
+	"f_nrnmpi_dbl_allgatherv_inplace", (void**)&p_nrnmpi_dbl_allgatherv_inplace,
+	"f_nrnmpi_dbl_alltoallv", (void**)&p_nrnmpi_dbl_alltoallv,
+	"f_nrnmpi_char_alltoallv", (void**)&p_nrnmpi_char_alltoallv,
+	"f_nrnmpi_dbl_broadcast", (void**)&p_nrnmpi_dbl_broadcast,
+	"f_nrnmpi_int_broadcast", (void**)&p_nrnmpi_int_broadcast,
+	"f_nrnmpi_char_broadcast", (void**)&p_nrnmpi_char_broadcast,
+	"f_nrnmpi_char_broadcast_world", (void**)&p_nrnmpi_char_broadcast_world,
+	"f_nrnmpi_int_sum_reduce", (void**)&p_nrnmpi_int_sum_reduce,
+	"f_nrnmpi_assert_opstep", (void**)&p_nrnmpi_assert_opstep,
+	"f_nrnmpi_dbl_allmin", (void**)&p_nrnmpi_dbl_allmin,
+	"f_nrnmpi_pgvts_least", (void**)&p_nrnmpi_pgvts_least,
+	"f_nrnmpi_send_doubles", (void**)&p_nrnmpi_send_doubles,
+	"f_nrnmpi_recv_doubles", (void**)&p_nrnmpi_recv_doubles,
+	"f_nrnmpi_postrecv_doubles", (void**)&p_nrnmpi_postrecv_doubles,
+	"f_nrnmpi_wait", (void**)&p_nrnmpi_wait,
+	"f_nrnmpi_barrier", (void**)&p_nrnmpi_barrier,
+	"f_nrnmpi_dbl_allreduce", (void**)&p_nrnmpi_dbl_allreduce,
+	"f_nrnmpi_dbl_allreduce_vec", (void**)&p_nrnmpi_dbl_allreduce_vec,
+	"f_nrnmpi_longdbl_allreduce_vec", (void**)&p_nrnmpi_longdbl_allreduce_vec,
+	"f_nrnmpi_long_allreduce_vec", (void**)&p_nrnmpi_long_allreduce_vec,
+	"f_nrnmpi_dbl_allgather", (void**)&p_nrnmpi_dbl_allgather,
+#if BGPDMA
+	"f_nrnmpi_bgp_comm", (void**)&p_nrnmpi_bgp_comm,
+	"f_nrnmpi_bgp_multisend", (void**)&p_nrnmpi_bgp_multisend,
+	"f_nrnmpi_bgp_single_advance", (void**)&p_nrnmpi_bgp_single_advance,
+	"f_nrnmpi_bgp_conserve", (void**)&p_nrnmpi_bgp_conserve,
+#endif
+	0,0
+};
+

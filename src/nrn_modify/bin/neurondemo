@@ -1,0 +1,29 @@
+#!/bin/sh
+
+ARCH=x86_64
+MODSUBDIR=x86_64
+
+if test "x${NRNHOME}" = x ; then
+        prefix="/raid/zyc/code_for_dhs_paper/install"
+	exec_prefix=/raid/zyc/code_for_dhs_paper/install/x86_64
+	NRNBIN=${exec_prefix}/bin/
+	NRNDEMO=/raid/zyc/code_for_dhs_paper/install/share/nrn/demo/
+else
+        prefix="$NRNHOME"
+	exec_prefix="${prefix}/${ARCH}"
+	NRNBIN="${exec_prefix}/bin/"
+	NRNDEMO="${prefix}/share/nrn/demo/"
+fi
+
+if test "${NRNHOME_EXEC}" != "" ; then
+	exec_prefix="${NRNHOME_EXEC}"
+	NRNBIN="${exec_prefix}/bin/"
+fi
+
+export NRNDEMO
+
+if [ ! -f "${NRNDEMO}neuron" ] ; then
+	(cd "${NRNDEMO}release" ; "${NRNBIN}nrnivmodl" ; cd .. ; ln -s release/${MODSUBDIR}/special neuron)
+fi
+
+"${NRNDEMO}neuron" "${NRNDEMO}demo.hoc" "$@" -

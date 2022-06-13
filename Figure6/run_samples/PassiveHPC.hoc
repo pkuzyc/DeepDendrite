@@ -1,0 +1,424 @@
+begintemplate PassiveHPC
+// Based on models of the BBP: https://bbp.epfl.ch/nmc-portal/microcircuit
+// Active properties were fitted using the MOO algorithm. 
+// See Eyal et al 2017 for details.
+public init, init_rc, delete_axon , init_biophys, insertChannel,biophys,distribute,geom_nseg,geom_nsec,delete_spine,add_few_spines,indexSections
+public soma, dend, apic, axon, myelin,spine, learning_spine
+public all, apical, basal, somatic, axonal,  nSecAll, nSecSoma, nSecApical, nSecBasal, Spines
+objref all, apical, basal, somatic, axonal, Spines, this ,segCounts
+objref  segCounts
+
+external lambda_f
+proc init() { 
+    all     = new SectionList()
+    somatic = new SectionList()
+    basal   = new SectionList()
+    apical  = new SectionList()
+    axonal  = new SectionList()
+    Spines = new SectionList()
+
+    forall delete_section()
+    celsius = 37
+ 
+     
+}
+
+
+create soma[1], dend[1], apic[1], axon[1], myelin[1],spine[1], learning_spine[1]
+
+
+
+proc indexSections() { local index  localobj tmpString, s
+    tmpString = new String()
+
+    s = $o1.swc.sections
+    for i=0, s.count()-1 {
+        $o1.name( s.object(i), tmpString.s )
+        sprint( tmpString.s, "%s.v(0.0001) = %d", tmpString.s, i )
+        execute( tmpString.s, this )
+    }
+}
+
+proc geom_nseg() {
+    geom_nseg_fixed(40)  
+    geom_nsec() //To count all sections
+}
+proc geom_nseg_fixed() { local secIndex, chunkSize
+    chunkSize = 40
+    if( numarg() > 0 ) {
+        chunkSize = $1
+    }
+    soma area(.5) // make sure diam reflects 3d points
+    secIndex=0
+    forsec all {
+        nseg = 1 + 2*int(L/chunkSize)
+        segCounts.x[secIndex] = nseg
+        secIndex = secIndex+1
+    }
+}
+
+/*!
+ * Count up the number of sections. Additionally, assign as estimate to the nseg var of each section, but this
+ * will most likely change after biophys are assigned and geom_nseg called
+ */
+proc geom_nsec() { local nSec
+    nSec = 0
+    forsec all {
+        nSec = nSec + 1
+    }
+    nSecAll = nSec
+    nSec = 0
+    forsec somatic { nSec = nSec + 1}
+    nSecSoma    =   nSec
+    nSec = 0
+    forsec apical { nSec = nSec + 1}
+    nSecApical=     nSec
+    nSec = 0
+    forsec basal { nSec = nSec + 1}
+    nSecBasal   =   nSec
+    nSec = 0
+    forsec axonal { nSec = nSec + 1}
+    nSecAxonalOrig = nSecAxonal = nSec
+    
+    segCounts = new Vector()
+    segCounts.resize(nSecAll)
+    nSec=0
+    forsec all {
+        segCounts.x[nSec] = nseg
+        nSec = nSec+1
+    }
+}
+
+/**
+ * Replace the axon built from the original morphology file with a stub axon.  If no args are given,
+ * The stub axon will attempt to use diam info from original axon and L=30.  If args are present, the
+ * axon diam is tapered according to the values given.  Also, axon[0].L = 20, axon[1].L = 30.
+ * An optional myelin section can be added according to a flag.
+ *
+ * @param $1 Initial diameter for axon[0]
+ * @param $2 diameter at end of axon[0], start of axon[1]
+ * @param $3 diameter at end of axon[1]
+ * @param $4 diameter of myelin section (if set to 0, then not created at all)
+ */
+proc delete_axon(){ local nSec, D1, D2, dist, i1, i2, count
+
+    // preserve the number of original axonal sections
+    nSec  = 0
+    forsec axonal{nSec = nSec + 1}
+    
+    // Try to grab info from original axon
+    if(nSec == 0){ 
+        D1 = D2 = 1
+    } else {
+        access axon[0]
+        i1 = i2 = v(0.0001) // used when serializing sections prior to sim start
+        D1 = D2 = diam
+        if( nSec > 1 ){ //More than one axon section present
+            access soma distance() //to calculate distance from soma
+            count = 0
+            forsec axonal{   // loop through all axon sections and check for 60um distance 
+                if( count == 1 ){
+                    i2 = v(0.0001)
+                }
+                count = count + 1
+                dist = distance(0.5)
+                if( dist > 60 ){ //if section is longer than 60um then store diam and exit from look
+                    D2 = diam
+                    break
+                }
+            }
+        }
+    }
+    
+    // get rid of the old axon
+    forsec axonal{delete_section()}
+    execute1("create axon[2]\n", this)
+    
+    // new axon dependant on args passed (or lack thereof)
+    access axon[0] {
+        if( numarg() == 0 ) {
+            L = 30
+            diam = D1
+            nseg = 1 + 2*int(L/40)
+        } else {
+            L = 20
+            nseg = 1+2*int(L/10)
+            diam(0:1) = $1:$2
+        }
+        all.append()
+        axonal.append()
+        v(0.0001) = i1
+    }
+    access axon[1] {
+        L = 30
+        if( numarg() == 0 ) {
+            diam = D2
+            nseg = 1 + 2*int(L/40)
+        } else {
+            nseg = 1+2*int(L/10)
+            diam(0:1) = $2:$3
+        }
+        all.append()
+        axonal.append()
+        v(0.0001) = i2
+    }
+    nSecAxonal = 2
+    
+    if( numarg() > 0 ) if ( $4 ) {
+        execute1("create myelin[1]\n", this)
+        access myelin{
+            L = 1000
+            nseg = 1+2*int(L/100)
+            diam = $4
+            v(0.0001) = i1
+        }
+        connect myelin(0), axon[1](1)
+    }
+    
+    if( numarg() == 0 ) {
+        soma[0] connect axon[0](0), 1
+        axon[0] connect axon[1](0), 1
+    } else {
+        connect axon(0), soma(0.5)
+        connect axon[1](0), axon[0](1)
+        access soma
+    }
+}
+
+proc insertChannel_neuron(){ localobj tmpString
+    tmpString = new String()
+    sprint(tmpString.s, "forsec %s  insert %s", $s1, $s2)
+    execute(tmpString.s, this)
+}
+
+strdef stmp,distfunc,mech
+    
+proc distribute(){local x localobj sl        
+    sl = $o1
+    mech = $s2
+    distfunc = $s3                
+    sprint(distfunc,"%%s %s(%%f) = %s",mech, distfunc)
+    forsec sl for(x) {
+        sprint (stmp,distfunc,secname(),x,distance(x))
+        execute(stmp)
+    }
+}
+    
+proc ndistribute(){local x,xroot,norm_factor localobj sl
+        sl = $o1
+        mech = $s2
+        distfunc = $s3
+        norm_factor = 1
+        if(numarg()>3) norm_factor = getLongestBranch(sl)
+        sprint(distfunc,"%%s %s(%%f) = %s",mech, distfunc)
+        forsec sl for(x) {
+            sprint (stmp,distfunc,secname(),x,distance(x)/norm_factor)
+            execute(stmp)
+        }
+}
+
+
+func getLongestBranch(){local maxL,d localobj distallist,sref
+    forsec $o1 {
+         distance()
+         break
+    }
+    maxL = 0
+    d = 0
+    distallist = new SectionList()
+    forsec $o1 {
+        sref = new SectionRef()
+        if (sref.nchild==0) distallist.append()
+    }
+    forsec distallist{
+        d = distance(1)
+        if(maxL<d) maxL = d
+    }
+    // for the soma case
+    if (maxL == 0) {
+        $o1 {
+            maxL = L
+        }
+    }
+    return maxL
+}
+proc insertChannel() {
+    insertChannel_neuron("all","pas")
+    // insertChannel_neuron("axonal","NaTg")
+    // insertChannel_neuron("somatic","NaTg")
+    // insertChannel_neuron("somatic","CaDynamics_E2")
+    // insertChannel_neuron("somatic","Nap_Et2")
+    // insertChannel_neuron("somatic","K_Tst")
+    // insertChannel_neuron("somatic","K_Pst")
+    // insertChannel_neuron("somatic","SKv3_1")
+    // insertChannel_neuron("somatic","Ca")
+    // insertChannel_neuron("somatic","Ca_LVAst")
+    // insertChannel_neuron("somatic","SK_E2")
+    // insertChannel_neuron("somatic","Im")
+    // insertChannel_neuron("axonal","CaDynamics_E2")
+    // insertChannel_neuron("axonal","Nap_Et2")
+    // insertChannel_neuron("axonal","K_Tst")
+    // insertChannel_neuron("axonal","K_Pst")
+    // insertChannel_neuron("axonal","SKv3_1")
+    // insertChannel_neuron("axonal","Ca")
+    // insertChannel_neuron("axonal","Ca_LVAst")
+    // insertChannel_neuron("axonal","SK_E2")
+    // insertChannel_neuron("axonal","Im")
+}
+
+proc init_rc() {
+	CM =0.44
+	RM = 48300
+	RA =  261.97
+	
+	{ forsec all { g_pas = 1/RM } }
+	{ forsec all { cm = CM } }
+	{ forsec all { Ra = RA} }
+	
+	// { forsec somatic { ek = -102 } }
+	// { forsec somatic { ena = 67.5 } }
+	
+	// { forsec axonal { ek = -102 } }
+	// { forsec axonal { ena = 67.5 } }
+}
+
+proc init_biophys() {
+    
+    // As fitted in Eyal et al 2016
+	StepDist = 60
+	//F = 1.9
+	//F = $1
+	//printf("F in hoc:%f", F)
+	CM =0.44
+	RM = 48300
+	RA =  261.97
+	
+	{ forsec all { g_pas = 1/RM } }
+	{ forsec all { cm = CM } }
+	{ forsec all { Ra = RA} }
+	
+	
+	
+	// { forsec somatic { ek = -102 } }
+	// { forsec somatic { ena = 67.5 } }
+	
+	// { forsec axonal { ek = -102 } }
+	// { forsec axonal { ena = 67.5 } }
+	
+	
+	
+	
+	{soma distance(0,0.5)}
+	{ forsec apical {
+		for (x){
+			if (distance(x)>StepDist) {
+				cm(x)=CM*F
+				g_pas(x)=(1/RM)*F
+			}
+	}}}
+	
+	
+	{ forsec basal { for (x){
+							if (distance(x)>StepDist) {
+								cm(x)=CM*F
+								g_pas(x)=(1/RM)*F
+							}
+	}}}
+	
+	
+	
+	
+	
+}
+proc biophys() {         
+	{ soma[0] distance() }
+	distribute(all,"e_pas","( 0 * %.6g  + 1 ) * 0.0", 1)
+	// distribute(somatic,"gNaTgbar_NaTg","( 0 * %.6g  + 1 ) * 0.168753", 1)
+	// distribute(somatic,"slopem_NaTg","( 0 * %.6g  + 1 ) * 13.8112", 1)
+	// distribute(somatic,"vshiftm_NaTg","( 0 * %.6g  + 1 ) * 15.991", 1)
+	// distribute(somatic,"vshifth_NaTg","( 0 * %.6g  + 1 ) * 11.8779", 1)
+	// distribute(somatic,"gSK_E2bar_SK_E2","( 0 * %.6g  + 1 ) * 0.0999258", 1)
+	// distribute(somatic,"gSKv3_1bar_SKv3_1","( 0 * %.6g  + 1 ) * 0.0712199", 1)
+	// distribute(axonal,"gNaTgbar_NaTg","( 0 * %.6g  + 1 ) * 5.99773", 1)
+	// distribute(axonal,"slopem_NaTg","( 0 * %.6g  + 1 ) * 8.61424", 1)
+	// distribute(axonal,"vshiftm_NaTg","( 0 * %.6g  + 1 ) * 8.44162", 1)
+	// distribute(axonal,"vshifth_NaTg","( 0 * %.6g  + 1 ) * 11.9795", 1)
+	// distribute(axonal,"gSK_E2bar_SK_E2","( 0 * %.6g  + 1 ) * 0.000708627", 1)
+	// distribute(axonal,"gSKv3_1bar_SKv3_1","( 0 * %.6g  + 1 ) * 1.71959", 1)
+	// distribute(axonal,"gCa_LVAstbar_Ca_LVAst","( 0 * %.6g  + 1 ) * 0.000294764", 1)
+	// distribute(axonal,"gCabar_Ca","( 0 * %.6g  + 1 ) * 0.000783592", 1)
+	// distribute(axonal,"gamma_CaDynamics_E2","( 0 * %.6g  + 1 ) * 0.0332027", 1)
+	// distribute(axonal,"decay_CaDynamics_E2","( 0 * %.6g  + 1 ) * 587.373", 1)
+	// distribute(axonal,"gNap_Et2bar_Nap_Et2","( 0 * %.6g  + 1 ) * 0.0499364", 1)
+	// distribute(axonal,"gK_Pstbar_K_Pst","( 0 * %.6g  + 1 ) * 0.000123465", 1)
+	// distribute(axonal,"gK_Tstbar_K_Tst","( 0 * %.6g  + 1 ) * 0.0953141", 1)
+	// distribute(axonal,"gImbar_Im","( 0 * %.6g  + 1 ) * 1.44367e-05", 1)
+	// distribute(somatic,"gCa_LVAstbar_Ca_LVAst","( 0 * %.6g  + 1 ) * 0.000928787", 1)
+	// distribute(somatic,"gCabar_Ca","( 0 * %.6g  + 1 ) * 0.000617007", 1)
+	// distribute(somatic,"gamma_CaDynamics_E2","( 0 * %.6g  + 1 ) * 0.000527805", 1)
+	// distribute(somatic,"decay_CaDynamics_E2","( 0 * %.6g  + 1 ) * 237.845", 1)
+	// distribute(somatic,"gNap_Et2bar_Nap_Et2","( 0 * %.6g  + 1 ) * 5.71532e-05", 1)
+	// distribute(somatic,"gK_Pstbar_K_Pst","( 0 * %.6g  + 1 ) * 1.8248e-05", 1)
+	// distribute(somatic,"gK_Tstbar_K_Tst","( 0 * %.6g  + 1 ) * 0.0756706", 1)
+	// distribute(somatic,"gImbar_Im","( 0 * %.6g  + 1 ) * 0.000120968", 1)
+}
+proc delete_spine(){
+    forsec Spines{delete_section()}
+}
+
+
+proc add_few_spines(){localobj sref_list, x_vec,sref
+    E_PAS = -86
+
+    PI = 3.14159265359  
+    sref_list = $o1
+    x_vec = $o2
+    neck_diam = $3
+    neck_len = $4
+    spine_head_area = $5
+    ra = $6
+
+
+
+    L_head = 2*sqrt(spine_head_area /4/PI) //sphere has the same surface area as cylinder with L=diam
+
+    diam_head = L_head
+    create spine[2*sref_list.count()]
+
+    for (j=0;j<sref_list.count();j+=1){
+        sref = sref_list.o(j)
+        shaft_x  = x_vec.x[j]
+        spine[2*(j)]{
+            L = neck_len
+            diam = neck_diam
+            insert pas
+            cm =CM
+            g_pas=1/RM
+            e_pas = E_PAS
+            Ra = ra
+            Spines.append()
+
+        }
+        spine[2*(j)+1]{
+            L = L_head
+            diam = diam_head
+            insert pas
+            cm =CM
+            g_pas=1/RM
+            e_pas = E_PAS
+            Ra = ra
+            Spines.append()
+
+        }
+        connect  spine[2*(j)+1](0) ,spine[2*(j)](1)
+        sref.sec{ 
+            connect spine[2*(j)](0), shaft_x
+        }
+    
+
+    }
+    
+}
+
+
+endtemplate PassiveHPC

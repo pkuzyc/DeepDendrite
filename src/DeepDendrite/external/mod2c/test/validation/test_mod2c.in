@@ -1,0 +1,57 @@
+#!/bin/sh
+
+# usage: test_mod2c MOD2C MODFILE CFILE
+
+if [ $# -ne 3 ]; then
+    echo 'usage: test_mod2c MOD2C MODFILE CFILE' >&2
+    exit 1
+fi
+
+mod2c="$1"
+modinput="$2"
+cmpfile="$3"
+
+# mod2c writes to the directory in which it finds
+# the MOD file, so make a temporary directory for
+# this purpose.
+
+tmpdir=$(mktemp -d -t tmp.XXXXXXXXXX)
+
+function cleanup {
+    if [ -d "$tmpdir" ]; then
+        rm -r "$tmpdir"
+    fi
+}
+
+trap cleanup EXIT
+
+function realpath {
+    echo "$(cd "$(dirname "$1")"; pwd)/$(basename "$1")"
+}
+
+
+cp "$modinput" "$tmpdir"
+modpfx=$(basename "$modinput" .mod)
+
+# canonicalize output
+@MOD2CFILTER@ < "$cmpfile" > "$tmpdir/_check"
+
+mod2c="$(realpath "$mod2c")"
+( cd "$tmpdir"; "$mod2c" "$modpfx" )
+
+if [ ! -e "$tmpdir/$modpfx".cpp ]; then
+    echo "no output file generated" >&2
+    exit 2
+fi
+
+@MOD2CFILTER@ < "$tmpdir/$modpfx".cpp > "$tmpdir/_out"
+ntok=$(wc -l < "$tmpdir/_out")
+echo "comparing $ntok tokens:"
+if diff "$tmpdir/_out" "$tmpdir/_check"; then
+    echo "ok"
+    exit 0
+else
+    echo "mismatch"
+    exit 3
+fi
+

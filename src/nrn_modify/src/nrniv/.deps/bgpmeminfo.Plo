@@ -1,0 +1,6 @@
+bgpmeminfo.lo: bgpmeminfo.c /usr/include/stdc-predef.h \
+ ../../src/oc/nrnmpiuse.h
+
+/usr/include/stdc-predef.h:
+
+../../src/oc/nrnmpiuse.h:

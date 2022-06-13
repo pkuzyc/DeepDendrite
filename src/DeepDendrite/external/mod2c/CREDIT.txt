@@ -1,0 +1,28 @@
+This file lists the most important contributors to the CoreNeuron project.
+It is sorted by name and formatted to allow easy grepping and beautification
+by scripts. The fields are: name (N), email (E), description (D).
+
+N: Adrien Devresse
+E: Adrien.Devresse@epfl.ch
+D: Build system support
+
+N: Timothee Ewart
+E: Timothee.Ewart@epfl.ch
+D: Performance analysis and optimization
+
+N: Michael Hines
+E: Michael.Hines@yale.edu
+D: All parts of the software
+
+N: Pramod Kumbhar 
+E: Pramod.Kumbhar@epfl.ch 
+D: All parts of the software
+
+N: Aleksandr Ovcharenko
+E: Aleksandr.Ovcharenko@epfl.ch 
+D: All parts of the software
+
+N: Stuart Yates
+E: Sam.Yates@epfl.ch
+D: Performance analysis and validation
+

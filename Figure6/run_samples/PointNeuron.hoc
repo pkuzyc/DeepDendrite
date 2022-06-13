@@ -1,0 +1,44 @@
+begintemplate PointNeuron
+    public init
+    public soma
+    public all, somatic
+
+    objref all, somatic
+
+create soma
+proc init() {
+    all = new SectionList()
+    soma all.wholetree()
+    geom_nseg()
+    biophys()
+    shape3D()
+
+}
+
+proc geom_nseg() {
+    soma{
+        L = 12.6157
+        diam = 12.6157
+        nseg = 1
+    }
+}
+
+proc biophys() {
+    soma {
+        Ra = 500
+        cm = 5
+        insert pas
+        g_pas = 0.001
+        e_pas = 0
+    }
+}
+
+proc shape3D() {
+    soma {
+        pt3dclear()
+        pt3dadd(0, 0, 0, 12.6157)
+        pt3dadd(12.6157, 0, 0, 12.6157)
+    }
+}
+
+endtemplate PointNeuron

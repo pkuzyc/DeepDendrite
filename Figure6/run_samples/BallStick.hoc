@@ -1,0 +1,64 @@
+begintemplate BallStick
+public init
+public soma, dend
+public all
+objref all
+
+create soma, dend
+proc init() {
+    topol()
+    all = new SectionList()
+    soma all.wholetree()
+    geom_nseg()
+    biophys()
+    shape3D()
+}
+
+proc topol() {
+    connect dend(0), soma(1)
+}
+
+proc geom_nseg() {
+    soma {
+        L = 2
+        diam = 2
+        nseg = 1
+    }
+    dend {
+        L = 10
+        diam = 1
+        nseg = 1
+    }
+}
+
+proc biophys() {
+    soma {
+        Ra = 500
+        cm = 5
+        insert pas
+        g_pas = 0.1
+        e_pas = 0
+    }
+    dend {
+        Ra = 500
+        cm = 5
+        insert pas
+        g_pas = 0.1
+        e_pas = 0
+    }
+}
+
+proc shape3D() {
+    soma {
+        pt3dclear()
+        pt3dadd(0, 0, 0, 2)
+        pt3dadd(2, 0, 0, 2)
+    }
+    dend {
+        pt3dclear()
+        pt3dadd(2, 0, 0, 1)
+        pt3dadd(12, 0, 0, 1)
+    }
+}
+
+endtemplate BallStick

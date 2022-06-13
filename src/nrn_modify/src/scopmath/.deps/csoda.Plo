@@ -1,0 +1,7 @@
+csoda.lo: csoda.c /usr/include/stdc-predef.h ../../nrnconf.h f2c.h
+
+/usr/include/stdc-predef.h:
+
+../../nrnconf.h:
+
+f2c.h:

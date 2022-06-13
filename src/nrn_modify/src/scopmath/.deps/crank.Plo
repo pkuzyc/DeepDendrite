@@ -1,0 +1,7 @@
+crank.lo: crank.c /usr/include/stdc-predef.h ../../nrnconf.h scoplib.h
+
+/usr/include/stdc-predef.h:
+
+../../nrnconf.h:
+
+scoplib.h:
