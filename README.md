@@ -32,17 +32,20 @@ Figure6: Model used in Figure6 in the paper, i.e. image classification on MNIST 
     modify the install.sh file to load correct modulefile of PGI or NVHPC SDK  
     source install.sh
 
-## 3. Run the demo of spine-level model:
+## 3. Evaluate the run time of solving equations with various methods:
+Follow the README.md in "Figure_3_4"
+	
+## 4. Run the demo of spine-level model:
   Commands:
     
     cd Figure5/run_samples
     python3 run.py
-  For more details please see Figure5/run_samples/README
+  For more details please see Figure5/run_samples/README.md
 
-## 4. Run the demo of image classification task:
+## 5. Run the demo of image classification task:
   Commands:
     
     cd Figure6/run_samples
     python3 run.py (for training and testing)
     python3 run_test.py (only for testing, with pre-trained model weights) 
-  For more details please see Figure6/run_samples/README
+  For more details please see Figure6/run_samples/README.md

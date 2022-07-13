@@ -36,30 +36,31 @@ def get_runtime(filename, kernel_type):
     return run_time
 
 #model_name = [250, 500, 750, 1000, 1250, 1500]
-model_name = ['dMSN', 'purkinjecell', 'ca3b', 'ca1', 'bulb3d', 'l5pc']
+model_name = ['ca1'] # model dir
 #model_name = ['l5pc_spine']
 #model_name = ['l5pc']
 #model_name = ['purkinje_pub']
 #cell_numbers = [500, 1000, 1500, 2000, 2500, 3000]
-cell_numbers = [250, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000]
+cell_numbers = [500, 1500] # cell numbers of the test model
 #cell_numbers = [250,500,750]
 #cell_numbers = [500]
 #str_split_num = ['1split', '4split', '8split', '16split']
 #str_split_num = ['16split_noopt', '16split_opt']
-split_num = [0, 4, 8, 16]
+split_num = [0, 16]
 str_split_num = [str(i) + 'split' for i in split_num]
 #split_num = [32, 32]
 #split_num = ['0split']
-kernel_names = ['kernel16','kernel17']
+#kernel_names = ['kernel16','kernel17']
 run_time = np.zeros((len(split_num), len(cell_numbers)))
 
-data_dir = '/home/zhangyichen/paper_test_models/'
+data_dir = './'
 t = 0
 index = 0
 test_times = 3
 single_times = np.zeros(test_times)
 
-writer = pd.ExcelWriter("a100_tp_test_noopt.xlsx")
+# evaluate the run time of CoreNEURON method and DHS with memory boosting
+writer = pd.ExcelWriter("run_time_with_memopt.xlsx")
 for i in range(len(model_name)): 
     neuron_dir = os.path.join(data_dir, model_name[i])
     for col in range(len(cell_numbers)):
@@ -71,8 +72,8 @@ for i in range(len(model_name)):
                 model_dir = os.path.join(neuron_dir, "%dcell_cp1"%cell_numbers[col])
                 kernel_type = 0
             else:
-                model_dir = os.path.join(neuron_dir, "%dcell_tp_%d"%(cell_numbers[col], split))
-                kernel_type = 16
+                model_dir = os.path.join(neuron_dir, "%dcell_cp3_%d"%(cell_numbers[col], split))
+                kernel_type = 17
                 #if kernel_names[row] == 'kernel16':
                 #    kernel_type = 16
                 #elif kernel_names[row] == 'kernel17':
@@ -84,7 +85,7 @@ for i in range(len(model_name)):
                 os.system(cmd)
                 cmd = 'nsys stats nsys_report.qdrep > rumtime' 
                 os.system(cmd)
-                single_times[j] = get_runtime('/home/zhangyichen/run_sample_no_memopt/rumtime', kernel_type)
+                single_times[j] = get_runtime('./rumtime', kernel_type)
                 #print model_dir, row, col
 
                 os.system('rm -f ./runtime')
@@ -97,7 +98,8 @@ for i in range(len(model_name)):
     df.to_excel(writer, model_name[i])
 writer.save()
 
-writer = pd.ExcelWriter("a100_tp_test_withopt.xlsx")
+# evaluate the run time of DHS without memory boosting
+writer = pd.ExcelWriter("run_time_without_memopt.xlsx")
 for i in range(len(model_name)): 
     neuron_dir = os.path.join(data_dir, model_name[i])
     for col in range(len(cell_numbers)):
@@ -106,8 +108,7 @@ for i in range(len(model_name)):
             #pdb.set_trace()
             #if (kernel_names[row] == 'kernel0'):
             if split == 0:
-                model_dir = os.path.join(neuron_dir, "%dcell_cp1"%cell_numbers[col])
-                kernel_type = 0
+                continue
             else:
                 model_dir = os.path.join(neuron_dir, "%dcell_tp_%d"%(cell_numbers[col], split))
                 kernel_type = 16
@@ -122,45 +123,16 @@ for i in range(len(model_name)):
                 os.system(cmd)
                 cmd = 'nsys stats nsys_report.qdrep > rumtime' 
                 os.system(cmd)
-                single_times[j] = get_runtime('/home/zhangyichen/run_sample_no_memopt/rumtime', kernel_type)
+                single_times[j] = get_runtime('./rumtime', kernel_type)
                 #print model_dir, row, col
 
                 os.system('rm -f ./runtime')
                 print('\n\n')
 
-            run_time[row, col] = np.mean(single_times) 
+            run_time[row - 1, col] = np.mean(single_times) 
 
     df = pd.DataFrame(run_time, str_split_num, cell_numbers)
 
     df.to_excel(writer, model_name[i])
 writer.save()
-
-'''
-writer = pd.ExcelWriter("test_network_dp_large.xlsx")
-for i in range(len(model_name)): 
-    for col in range(len(cell_numbers)):
-        for row in range(len(split_num)):
-            #pdb.set_trace()
-            if (split_num[row] == '0split'):
-                model_dir = data_dir + str(model_name[i]) + '_' + str(cell_numbers[col]) + 'cell_' + split_num[row]
-                cmd = 'nvprof --log-file ./log.txt ./kernel ' + model_dir+'/cell_profile ' + model_dir+'/cell_data ' + model_dir+'/result_out.txt ' + '0'
-            else:
-                model_dir = data_dir + str(model_name[i]) + '_' + str(cell_numbers[col]) + 'cell_dp_' + split_num[row]
-                cmd = 'nvprof --log-file ./log.txt ./kernel ' + model_dir+'/cell_profile ' + model_dir+'/cell_data ' + model_dir+'/result_out.txt ' + '16'
-            print cmd
-            for j in range(test_times):
-                os.system(cmd)
-                single_times[j] = get_runtime('./log.txt', row)
-                #print model_dir, row, col
-
-                os.system('rm -f ./log.txt')
-                print '\n\n'
-
-            run_time[row, col] = np.mean(single_times) 
-
-    df = pd.DataFrame(run_time, split_num, cell_numbers)
-
-    df.to_excel(writer, model_name[i])
-writer.save()
-'''
 
