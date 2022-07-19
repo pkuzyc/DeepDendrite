@@ -1,2 +1,2 @@
-# CoreNeuronZ
-Implement our parallel method in CoreNeuron. Implement parameter recording, task training, testing.
+# DeepDendrite
+DeepDendrite is built up based on the CoreNeuron simulator (https://github.com/BlueBrain/CoreNeuron). DeepDendrite supports simulating, performing AI tasks on multi-compartment models wiht our DHS method.
