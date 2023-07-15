@@ -29,7 +29,7 @@ Figure6: Model used in Figure6 in the paper, i.e. image classification on MNIST 
   Compile commands: 
   
     cd src/DeepDendrite  
-    modify the install.sh file to load correct modulefile of PGI or NVHPC SDK  
+    modify the install.sh file to load correct modulefile of PGI or NVHPC SDK, and set the install path and mod file path in cmake command  
     source install.sh
 
 ## 3. Evaluate the run time of solving equations with various methods:
