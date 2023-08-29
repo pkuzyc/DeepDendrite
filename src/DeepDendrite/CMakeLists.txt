@@ -257,14 +257,14 @@ if(CLANG_FORMAT_FOUND)
         )
 endif()
 
-#Turn off inline assembly for PGI
-if(${CMAKE_C_COMPILER_ID} STREQUAL "PGI")
+#Turn off inline assembly for PGI/NVHPC
+if(${CMAKE_C_COMPILER_ID} STREQUAL "PGI" OR ${CMAKE_C_COMPILER_ID} STREQUAL "NVHPC")
     add_definitions(-DSWAP_ENDIAN_DISABLE_ASM)
 endif()
 
 if(ENABLE_OPENACC)
     set(COMPILE_LIBRARY_TYPE "STATIC")
-    if(${CMAKE_C_COMPILER_ID} STREQUAL "PGI")
+    if(${CMAKE_C_COMPILER_ID} STREQUAL "PGI" OR ${CMAKE_C_COMPILER_ID} STREQUAL "NVHPC")
         add_definitions( -DPG_ACC_BUGS)
         set(ACC_FLAGS "-acc -Minline=size:200,levels:10")
         if (ENABLE_OPENACC_INFO)
@@ -273,7 +273,7 @@ if(ENABLE_OPENACC)
         set(CMAKE_C_FLAGS "${ACC_FLAGS} ${CMAKE_C_FLAGS}")
         set(CMAKE_CXX_FLAGS "${ACC_FLAGS} ${CMAKE_CXX_FLAGS}")
     else()
-        message(WARNING "OpenACC implementation is only supported and tested using only PGI")
+        message(WARNING "OpenACC implementation is only supported and tested using only PGI/NVHPC")
         message(WARNING "Add required compiler flags to enabled OpenACC")
     endif()
 
