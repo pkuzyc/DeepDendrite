@@ -1,9 +1,9 @@
 import sys
 import os
 
-os.system("module purge")
+# os.system("module purge")
 
-cmd = "../../install/x86_64/bin/nrnivmodl ../ActiveMechanisms"
+cmd = "../../install/x86_64/bin/nrnivmodl ../../src/all_mechanisms"
 os.system(cmd)
 
 # generate model with fully distributed spines

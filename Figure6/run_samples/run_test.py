@@ -1,8 +1,8 @@
 import os
 import sys
 
-os.system("module purge")
-cmd = "../../install/x86_64/bin/nrnivmodl ./mod"
+# os.system("module purge")
+cmd = "../../install/x86_64/bin/nrnivmodl ../../src/all_mechanisms"
 if not os.path.isdir("./x86_64"):
     os.system(cmd)
 
