@@ -46,7 +46,7 @@ if not os.path.isdir("./coredat/hpcnet_train_batch16"):
 # --cell-permute: 3 indicates use DHS in simulation
 # --cell-nthread: threads number each cell
 # --gpu: simulate on GPU
-cmd = "../../install/bin/deepdendrite -d ./coredat/hpcnet_train_batch16 -e 10000 -dt 0.25 -v 0 --nonv-gap 1 --need-record 1 --rec-file ./coredat/hpcnet_train_batch16/30epochs_weights --input-file ../data/bin_data/mnist/stim_img_train --training 1 --testing 0 --batchsize 16 --cell-permute 3 --cell-nthread 16 --gpu" 
+cmd = "../../install/bin/deepdendrite -d ./coredat/hpcnet_train_batch16 -e 5625010 -dt 0.25 -v 0 --nonv-gap 1 --need-record 1 --rec-file ./coredat/hpcnet_train_batch16/30epochs_weights --input-file ../data/bin_data/mnist/stim_img_train --training 1 --testing 0 --batchsize 16 --cell-permute 3 --cell-nthread 16 --gpu" 
 os.system(cmd)
 
 # convert the saved weights from binary file to .npy format
